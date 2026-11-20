@@ -1,0 +1,102 @@
+[
+  {
+    "id": "EX01",
+    "name": "Sapin de Noël artificiel 180 cm",
+    "rayon": "Sapins & pieds",
+    "url": "https://www.amazon.fr/s?k=sapin+de+noel+artificiel+180+cm",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX02",
+    "name": "Pied de sapin réglable",
+    "rayon": "Sapins & pieds",
+    "url": "https://www.amazon.fr/s?k=pied+de+sapin+de+noel",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX03",
+    "name": "Guirlande LED blanc chaud 10 m",
+    "rayon": "Guirlandes & lumières",
+    "url": "https://www.amazon.fr/s?k=guirlande+led+blanc+chaud+10m",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX04",
+    "name": "Rideau lumineux de fenêtre",
+    "rayon": "Guirlandes & lumières",
+    "url": "https://www.amazon.fr/s?k=rideau+lumineux+noel+fenetre",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX05",
+    "name": "Lot de boules de Noël rouge et or",
+    "rayon": "Boules & suspensions",
+    "url": "https://www.amazon.fr/s?k=boules+de+noel+rouge+et+or+lot",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX06",
+    "name": "Étoile cimier pour sapin",
+    "rayon": "Boules & suspensions",
+    "url": "https://www.amazon.fr/s?k=etoile+cimier+sapin",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX07",
+    "name": "Chemin de table de Noël",
+    "rayon": "Table de Noël",
+    "url": "https://www.amazon.fr/s?k=chemin+de+table+noel",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX08",
+    "name": "Centre de table avec bougies",
+    "rayon": "Table de Noël",
+    "url": "https://www.amazon.fr/s?k=centre+de+table+noel+bougies",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX09",
+    "name": "Couronne de porte de Noël",
+    "rayon": "Déco extérieure",
+    "url": "https://www.amazon.fr/s?k=couronne+de+porte+noel",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  },
+  {
+    "id": "EX10",
+    "name": "Guirlande lumineuse extérieure IP44",
+    "rayon": "Déco extérieure",
+    "url": "https://www.amazon.fr/s?k=guirlande+lumineuse+exterieur+ip44",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "example": true
+  }
+]
