@@ -2,7 +2,7 @@ export const SITE_NAME = "MerryChristmas";
 export const SITE_DESCRIPTION =
   "Idées déco de Noël sélectionnées rayon par rayon : sapins, guirlandes, boules, table de fête et extérieur.";
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://merry-christmas-rust-xi.vercel.app").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://merry-christmas-shop-2026.vercel.app").replace(/\/$/, "");
 
 // E-mail de contact affiché dans les mentions légales
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "merrychristmas2026.contact@gmail.com";
