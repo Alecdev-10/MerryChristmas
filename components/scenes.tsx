@@ -445,6 +445,85 @@ function SceneExterieur({ active }: { active: boolean }) {
   );
 }
 
+/* ─── Vitrine : le village enneigé sur son plateau ───────────── */
+function House({ x, z, w, h, roof, wall, rot = 0 }: { x: number; z: number; w: number; h: number; roof: string; wall: string; rot?: number }) {
+  return (
+    <group position={[x, 0, z]} rotation={[0, rot, 0]}>
+      <mesh position={[0, h / 2, 0]}>
+        <boxGeometry args={[w, h, w * 0.8]} />
+        <meshStandardMaterial color={wall} roughness={0.9} />
+      </mesh>
+      <mesh position={[0, h + w * 0.32, 0]} rotation={[0, Math.PI / 4, 0]}>
+        <coneGeometry args={[w * 0.78, w * 0.64, 4]} />
+        <meshStandardMaterial color={roof} roughness={0.8} flatShading />
+      </mesh>
+      <mesh position={[0, h + w * 0.42, 0]} rotation={[0, Math.PI / 4, 0]} scale={[0.82, 0.5, 0.82]}>
+        <coneGeometry args={[w * 0.78, w * 0.4, 4]} />
+        <meshStandardMaterial color={C.givre} roughness={1} flatShading />
+      </mesh>
+      {[-w * 0.22, w * 0.22].map((wx) => (
+        <mesh key={wx} position={[wx, h * 0.58, w * 0.41]} userData={{ win: true }}>
+          <planeGeometry args={[w * 0.2, w * 0.22]} />
+          <meshBasicMaterial color="#ffc766" toneMapped={false} />
+        </mesh>
+      ))}
+      <mesh position={[0, h * 0.2, w * 0.41]}>
+        <planeGeometry args={[w * 0.22, h * 0.4]} />
+        <meshStandardMaterial color={C.bois} />
+      </mesh>
+    </group>
+  );
+}
+
+function SceneVillage({ active }: { active: boolean }) {
+  const level = useLight(active);
+  const plateau = useRef<THREE.Group>(null);
+  useFrame(({ clock }, dt) => {
+    const g = plateau.current;
+    if (!g) return;
+    g.rotation.y += dt * 0.12 * (0.3 + level.current);
+    const t = clock.elapsedTime;
+    let i = 0;
+    g.traverse((o) => {
+      if (!o.userData.win) return;
+      const m = (o as THREE.Mesh).material as THREE.MeshBasicMaterial;
+      m.color.setRGB(1, 0.62 + 0.18 * Math.sin(t * 2.3 + i * 1.7) * level.current, 0.3);
+      i++;
+    });
+  });
+  return (
+    <>
+      <Camera y={1.5} z={5.2} />
+      <Lights level={level} />
+      <Decor />
+      <group ref={plateau} position={[0, -0.6, 0]}>
+        <mesh position={[0, 0.06, 0]}>
+          <cylinderGeometry args={[1.9, 2, 0.12, 48]} />
+          <meshStandardMaterial color="#eef2f5" roughness={1} />
+        </mesh>
+        <group position={[0, 0.12, 0]}>
+          <House x={-0.9} z={0.3} w={0.7} h={0.6} roof="#7a1222" wall="#d9c3a5" rot={0.3} />
+          <House x={0.15} z={-0.45} w={0.9} h={0.9} roof={C.sapinFonce} wall="#c9a27e" />
+          <House x={1.05} z={0.35} w={0.6} h={0.5} roof="#5a3520" wall="#e6d7c3" rot={-0.4} />
+          <House x={-0.2} z={0.95} w={0.5} h={0.42} roof={C.laiton} wall="#d4b89a" rot={0.1} />
+          {[[-1.4, -0.5], [1.3, -0.6], [0.7, 1.1], [-1.2, 1.0]].map(([x, z]) => (
+            <group key={`${x}${z}`} position={[x, 0, z]}>
+              <mesh position={[0, 0.35, 0]}>
+                <coneGeometry args={[0.22, 0.7, 7]} />
+                <meshStandardMaterial color={C.sapinFonce} flatShading />
+              </mesh>
+              <mesh position={[0, 0.56, 0]}>
+                <coneGeometry args={[0.13, 0.26, 7]} />
+                <meshStandardMaterial color={C.givre} flatShading />
+              </mesh>
+            </group>
+          ))}
+        </group>
+      </group>
+    </>
+  );
+}
+
 export function VitrineScene({ scene, active, lite = false }: { scene: SceneKey; active: boolean; lite?: boolean }) {
   switch (scene) {
     case "sapins":
@@ -453,6 +532,8 @@ export function VitrineScene({ scene, active, lite = false }: { scene: SceneKey;
       return <SceneGuirlandes active={active} />;
     case "boules":
       return <SceneBoules active={active} lite={lite} />;
+    case "village":
+      return <SceneVillage active={active} />;
     case "table":
       return <SceneTable active={active} />;
     case "exterieur":

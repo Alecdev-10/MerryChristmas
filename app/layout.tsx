@@ -25,7 +25,7 @@ const pinterestVerify = process.env.NEXT_PUBLIC_PINTEREST_VERIFY;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: `${SITE_NAME} · Les vitrines de Noël`, template: `%s · ${SITE_NAME}` },
+  title: { default: `Décoration de Noël 2026 : idées sapin, guirlandes et table · ${SITE_NAME}`, template: `%s · ${SITE_NAME}` },
   description: SITE_DESCRIPTION,
   openGraph: { type: "website", siteName: SITE_NAME, locale: "fr_FR" },
   ...(pinterestVerify ? { other: { "p:domain_verify": pinterestVerify } } : {}),

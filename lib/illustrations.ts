@@ -10,6 +10,8 @@ export const ILLUSTRATIONS = data as Record<IllusKind, IllusElement[]>;
 export function illusForProduct(name: string, rayon: string): IllusKind {
   const n = name.toLowerCase();
   const rules: [RegExp, IllusKind][] = [
+    [/village|maison/, "village"],
+    [/casse-noisette|figurine|santon|personnage/, "figurine"],
     [/cache-pied|jupe/, "jupe"],
     [/pied|support/, "pied"],
     [/sapin/, "sapin"],
@@ -29,6 +31,7 @@ export function illusForProduct(name: string, rayon: string): IllusKind {
     "Sapins & pieds": "sapin",
     "Guirlandes & lumières": "guirlande",
     "Boules & suspensions": "boules",
+    "Villages & figurines": "village",
     "Table de Noël": "centre",
     "Déco extérieure": "couronne",
   };
@@ -40,6 +43,7 @@ export const ILLUS_BY_SCENE: Record<SceneKey, IllusKind> = {
   sapins: "sapin",
   guirlandes: "guirlande",
   boules: "boules",
+  village: "village",
   table: "centre",
   exterieur: "couronne",
 };

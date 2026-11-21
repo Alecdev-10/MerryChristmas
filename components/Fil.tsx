@@ -102,7 +102,9 @@ export default function Fil({ products }: { products: Product[] }) {
                         <Illustration kind={illusForProduct(p.name, p.rayon)} color="#3a1a10" stroke={1.8} />
                       )}
                     </a>
+                    {p.gamme && <p className="etiquette-gamme">{p.gamme}</p>}
                     <p className="etiquette-nom">{p.name}</p>
+                    {p.benefice && <p className="etiquette-benefice">{p.benefice}</p>}
                     {p.price != null && <p className="etiquette-prix">{euro.format(p.price)}</p>}
                     <a href={withAffiliateTag(p.url)} target="_blank" rel="sponsored noopener noreferrer">
                       Voir sur Amazon

@@ -116,7 +116,7 @@ export default function Boulevard() {
 
   return (
     <>
-    <section ref={section} className="boulevard" aria-label="Les cinq vitrines">
+    <section ref={section} id="vitrines" className="boulevard" aria-label="Les vitrines">
       <div className="trottoir" aria-hidden="true" />
       <div ref={track} className="boulevard-track">
         {RAYONS.map((r, i) => (

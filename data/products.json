@@ -6,7 +6,9 @@
     "url": "https://www.amazon.fr/dp/B07YFR5FJF",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "Pointes très fournies et support en bois : il a l'air vrai même de près."
   },
   {
     "id": "P002",
@@ -15,7 +17,9 @@
     "url": "https://www.amazon.fr/dp/B07VDCT5YD",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "580 branches pour un sapin dense, monté en dix minutes."
   },
   {
     "id": "P003",
@@ -24,7 +28,9 @@
     "url": "https://www.amazon.fr/dp/B07KPQPX7C",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Se règle sur le tronc et garde l'eau : idéal pour un sapin naturel."
   },
   {
     "id": "P004",
@@ -33,7 +39,9 @@
     "url": "https://www.amazon.fr/dp/B0CHNZLY32",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Cache le pied sous une fausse fourrure blanche, effet neige."
   },
   {
     "id": "P005",
@@ -42,7 +50,9 @@
     "url": "https://www.amazon.fr/dp/B0CHF55ZFP",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "La finition qui fait passer le sapin de correct à photo."
   },
   {
     "id": "P006",
@@ -51,7 +61,9 @@
     "url": "https://www.amazon.fr/dp/B07WDBYST3",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Minuterie intégrée et IP44 : elle va dedans comme dehors."
   },
   {
     "id": "P007",
@@ -60,7 +72,9 @@
     "url": "https://www.amazon.fr/dp/B07YQMWJKN",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "À piles, sans fil à cacher : pour une étagère ou une couronne."
   },
   {
     "id": "P008",
@@ -69,7 +83,9 @@
     "url": "https://www.amazon.fr/dp/B01MDNJZET",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "200 LED blanc chaud pour habiller un sapin de 120 cm."
   },
   {
     "id": "P009",
@@ -78,7 +94,9 @@
     "url": "https://www.amazon.fr/dp/B009E2M5RQ",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Transforme une fenêtre nue en décor en deux minutes."
   },
   {
     "id": "P010",
@@ -87,7 +105,9 @@
     "url": "https://www.amazon.fr/dp/B0CKQYN865",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "12 étoiles qui pendent à des hauteurs différentes."
   },
   {
     "id": "P011",
@@ -96,7 +116,9 @@
     "url": "https://www.amazon.fr/dp/B0D9JCV6BW",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "120 boules incassables : de quoi remplir un grand sapin, même avec un chat."
   },
   {
     "id": "P012",
@@ -105,7 +127,9 @@
     "url": "https://www.amazon.fr/dp/B01N8V1GQ1",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Paillettes rouge et or pour les branches du bord."
   },
   {
     "id": "P013",
@@ -114,7 +138,9 @@
     "url": "https://www.amazon.fr/dp/B0GTM26BSF",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Petites boules de 4 cm pour combler les vides."
   },
   {
     "id": "P014",
@@ -123,7 +149,9 @@
     "url": "https://www.amazon.fr/dp/B0DB8SSX74",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Verre argenté qui accroche la lumière de la guirlande."
   },
   {
     "id": "P015",
@@ -132,7 +160,9 @@
     "url": "https://www.amazon.fr/dp/B07JG187BW",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Étoile blanche pailletée, parfaite sur un sapin floqué."
   },
   {
     "id": "P016",
@@ -141,7 +171,9 @@
     "url": "https://www.amazon.fr/dp/B0HC37RYQX",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Étoiles dorées pour une table champagne et or."
   },
   {
     "id": "P017",
@@ -150,7 +182,9 @@
     "url": "https://www.amazon.fr/dp/B0FP8X9XBB",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Argent et flocons pour une table givrée."
   },
   {
     "id": "P018",
@@ -159,7 +193,9 @@
     "url": "https://www.amazon.fr/dp/B0BKGKJNBF",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "Le centre de table complet : bougeoirs, pommes de pin et baies."
   },
   {
     "id": "P019",
@@ -168,7 +204,9 @@
     "url": "https://www.amazon.fr/dp/B00PEPNO3G",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Givré et bas, on se voit par-dessus pendant le repas."
   },
   {
     "id": "P020",
@@ -177,7 +215,9 @@
     "url": "https://www.amazon.fr/dp/B0H7MJ7BH5",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "La lumière des bougies, sans flamme au milieu des serviettes."
   },
   {
     "id": "P021",
@@ -186,7 +226,9 @@
     "url": "https://www.amazon.fr/dp/B0DF3671CL",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "45 cm bien fournis : la porte se voit de la rue."
   },
   {
     "id": "P022",
@@ -195,7 +237,9 @@
     "url": "https://www.amazon.fr/dp/B0FLY6HZCZ",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Branches givrées pour une entrée « winter wonderland »."
   },
   {
     "id": "P023",
@@ -204,7 +248,9 @@
     "url": "https://www.amazon.fr/dp/B0BG71YZGS",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "400 LED le long de la gouttière : toute la façade s'illumine."
   },
   {
     "id": "P024",
@@ -213,7 +259,9 @@
     "url": "https://www.amazon.fr/dp/B0DYYV9SX9",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Grosses ampoules G40 pour un balcon façon marché de Noël."
   },
   {
     "id": "P025",
@@ -222,6 +270,195 @@
     "url": "https://www.amazon.fr/dp/B0FLK5TQ9S",
     "price": null,
     "image": null,
-    "status": "Validé"
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Quatre lanternes pour encadrer la porte ou les marches."
+  },
+  {
+    "id": "P026",
+    "name": "Sapin floqué 210 cm avec neige épaisse et LED intégrées (Yorbay)",
+    "rayon": "Sapins & pieds",
+    "url": "https://www.amazon.fr/dp/B0915NX337",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "Neige épaisse et lumières déjà posées : l'effet winter wonderland sans effort."
+  },
+  {
+    "id": "P027",
+    "name": "Sapin artificiel 180 cm touffu et réaliste (YEAUPE PRO)",
+    "rayon": "Sapins & pieds",
+    "url": "https://www.amazon.fr/dp/B0GY13PP2W",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Très bien noté pour sa densité : il accepte toutes les palettes."
+  },
+  {
+    "id": "P028",
+    "name": "Guirlande fil cuivre 10 m, 100 micro-LED, USB (SALCAR)",
+    "rayon": "Guirlandes & lumières",
+    "url": "https://www.amazon.fr/dp/B01HOAV7L4",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Se glisse dans un bocal, une couronne ou un centre de table."
+  },
+  {
+    "id": "P029",
+    "name": "Guirlande connectée Twinkly Strings 600 LED",
+    "rayon": "Guirlandes & lumières",
+    "url": "https://www.amazon.fr/dp/B08F2H7XTY",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "Couleurs et animations réglées depuis le téléphone."
+  },
+  {
+    "id": "P030",
+    "name": "Lot de 30 boules en verre champagne et crème mat, 6 cm (Inge Glas)",
+    "rayon": "Boules & suspensions",
+    "url": "https://www.amazon.fr/dp/B07Z83TS6W",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "La palette champagne de l'année, en vrai verre soufflé."
+  },
+  {
+    "id": "P031",
+    "name": "Lot de 16 boules en verre or nacré, 8 cm",
+    "rayon": "Boules & suspensions",
+    "url": "https://www.amazon.fr/dp/B08LD3DZDJ",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Grosses boules dorées à glisser près du tronc pour la profondeur."
+  },
+  {
+    "id": "P032",
+    "name": "Mini village de Noël 12 boutiques avec LED (Toyland)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B07YL3ZPD8",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Douze petites boutiques allumées pour une étagère ou un rebord de fenêtre."
+  },
+  {
+    "id": "P033",
+    "name": "Village de Noël 3D enneigé éclairé par LED (Haushalt International)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B077R5S5VS",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Une scène complète, prête à poser sur le buffet."
+  },
+  {
+    "id": "P034",
+    "name": "Village de Noël en bois éclairé avec minuterie (Romadedi)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B0FJXPSFZ1",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Bois découpé et lumière chaude, s'allume seul chaque soir."
+  },
+  {
+    "id": "P035",
+    "name": "Lot de 3 maisons en céramique blanche à LED (Romadedi)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B0FJRKL1HB",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Céramique blanche : parfait pour un Noël givré ou nordique."
+  },
+  {
+    "id": "P036",
+    "name": "Maison lumineuse Lemax « Tannenbaum Christmas Shoppe »",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B002R09516",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "La marque de référence des villages : on agrandit le sien chaque année."
+  },
+  {
+    "id": "P037",
+    "name": "Figurine Père Noël debout 30,5 cm (Uten)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B08ML5L61C",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Le Père Noël traditionnel, pour l'entrée ou le pied du sapin."
+  },
+  {
+    "id": "P038",
+    "name": "Casse-noisette roi au sceptre en bois pailleté, 24 cm",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B0BM4G6VMH",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Le casse-noisette classique pour la cheminée."
+  },
+  {
+    "id": "P039",
+    "name": "Lot de 2 casse-noisettes dorés en bois avec nœud en velours (Weysat)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B0F7LT9D6F",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Coup de cœur",
+    "benefice": "Grands, dorés et velours : la touche glamour champagne."
+  },
+  {
+    "id": "P040",
+    "name": "Chemin de table doré à franges, lin brillant 35 x 240 cm",
+    "rayon": "Table de Noël",
+    "url": "https://www.amazon.fr/dp/B097YBCNZL",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Lavable et réutilisable, il habille toute la table en un geste."
+  },
+  {
+    "id": "P041",
+    "name": "Chemin de table doré en PVC motif sphères (FAVE)",
+    "rayon": "Table de Noël",
+    "url": "https://www.amazon.fr/dp/B0FJDKS53M",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Effet métal doré qui reflète la lumière des bougies."
+  },
+  {
+    "id": "P042",
+    "name": "Projecteur de Noël extérieur 2 en 1, 12 motifs, effet vagues (YAZEKY)",
+    "rayon": "Déco extérieure",
+    "url": "https://www.amazon.fr/dp/B0C9KQSWDY",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Milieu de gamme",
+    "benefice": "Toute la façade décorée sans échelle ni guirlande."
   }
 ]

@@ -1,6 +1,6 @@
 export const SITE_NAME = "MerryChristmas";
 export const SITE_DESCRIPTION =
-  "Idées déco de Noël sélectionnées rayon par rayon : sapins, guirlandes, boules, table de fête et extérieur.";
+  "Décoration de Noël 2026 : idées et sélections rayon par rayon. Sapins floqués, guirlandes LED, boules or et champagne, villages lumineux, table du réveillon et extérieur.";
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://merry-christmas-shop-2026.vercel.app").replace(/\/$/, "");
 
@@ -10,7 +10,7 @@ export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "merrychri
 export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "merrychris055-21";
 
 export const AFFILIATE_NOTICE =
-  "Liens affiliés : en tant que Partenaire Amazon, nous touchons une commission sur les achats remplissant les conditions requises, sans surcoût pour vous.";
+  "En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.";
 
 /**
  * Ajoute (ou remplace) le paramètre `tag` Partenaires sur un lien Amazon.

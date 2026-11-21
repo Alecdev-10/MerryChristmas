@@ -10,6 +10,10 @@ export type Product = {
   price: number | null;
   image: string | null;
   status: string;
+  /** Petit prix, Milieu de gamme ou Coup de cœur */
+  gamme?: string;
+  /** Une phrase : ce que le produit change chez vous */
+  benefice?: string;
   /** true = produit d'exemple, à remplacer par un vrai produit */
   example?: boolean;
 };

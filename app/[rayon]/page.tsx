@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!rayon) return {};
   const image = getProductsByRayon(slug).find((p) => p.image)?.image;
   return {
-    title: rayon.title,
+    title: rayon.seoTitle,
     description: rayon.intro,
     alternates: { canonical: `/${rayon.slug}` },
     openGraph: {
-      title: rayon.title,
+      title: rayon.seoTitle,
       description: rayon.intro,
       url: `/${rayon.slug}`,
       ...(image ? { images: [{ url: image }] } : {}),
@@ -54,6 +54,16 @@ export default async function RayonPage({ params }: Props) {
       ) : (
         <p className="rayon-note">Cette vitrine se remplit : revenez dans quelques jours.</p>
       )}
+
+      <section className="rayon-conseil" aria-labelledby="conseil-titre">
+        <h2 id="conseil-titre">Nos conseils pour ce rayon</h2>
+        {rayon.texte.map((t, k) => (
+          <p key={k}>{t}</p>
+        ))}
+        <p>
+          <Link href={`/inspiration#${rayon.guide.ancre}`}>Lire le guide : {rayon.guide.label}</Link>
+        </p>
+      </section>
 
       <nav className="vitrine-suivante" aria-label="Autres vitrines">
         <Link href={`/${prev.slug}`}>

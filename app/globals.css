@@ -452,6 +452,17 @@ img {
   margin: 0 0 0.9rem;
   font-weight: 500;
 }
+.etiquette-gamme {
+  font-size: 0.75rem;
+  margin: 0 0 0.35rem;
+  color: #8a5a2b;
+}
+.etiquette-benefice {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  margin: -0.4rem 0 0.9rem;
+  opacity: 0.85;
+}
 .etiquette-prix {
   font-family: var(--font-titre), serif;
   font-size: var(--t-24);
@@ -517,6 +528,141 @@ img {
   font-weight: 500;
   font-size: var(--t-32);
   margin-top: 2.5rem;
+}
+
+
+/* ─── Boutons de façade ───────────────────────────────────────── */
+.facade-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+.bouton {
+  display: inline-block;
+  font-size: var(--t-18);
+  color: var(--velours-profond);
+  background: var(--lampion);
+  text-decoration: none;
+  padding: 0.9rem 1.4rem 0.85rem;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  transition: background 0.2s;
+}
+.bouton:hover {
+  background: #ffd27a;
+}
+.bouton-second {
+  color: var(--givre);
+  background: rgba(243, 238, 242, 0.12);
+}
+.bouton-second:hover {
+  background: rgba(243, 238, 242, 0.22);
+}
+.bouton:focus-visible,
+.entrer:focus-visible {
+  outline: 2px solid var(--givre);
+  outline-offset: 3px;
+}
+
+.footer-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+}
+
+/* ─── Conseils de rayon ───────────────────────────────────────── */
+.rayon-conseil {
+  max-width: 64ch;
+  margin-top: 5rem;
+  line-height: 1.65;
+}
+.rayon-conseil h2,
+.guide h2 {
+  font-family: var(--font-titre), serif;
+  font-weight: 500;
+  font-size: var(--t-42);
+  line-height: 1.1;
+  margin: 0 0 1.2rem;
+}
+.rayon-conseil a,
+.guide a {
+  color: var(--lampion);
+}
+
+/* ─── Espace Inspiration ──────────────────────────────────────── */
+.inspiration {
+  padding: clamp(2rem, 6vw, 5rem) var(--pad) 4rem;
+}
+.inspiration-intro {
+  max-width: 52ch;
+  font-size: var(--t-24);
+  line-height: 1.4;
+}
+.sommaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.sommaire a {
+  display: block;
+  color: var(--givre);
+  text-decoration: none;
+  border: 1px solid rgba(243, 238, 242, 0.3);
+  padding: 0.55rem 0.9rem;
+}
+.sommaire a:hover {
+  border-color: var(--lampion);
+  color: var(--lampion);
+}
+.guide {
+  max-width: 64ch;
+  margin-top: 5.5rem;
+  line-height: 1.65;
+  scroll-margin-top: 2rem;
+}
+.guide ol,
+.guide ul {
+  padding-left: 1.3rem;
+}
+.guide li {
+  margin-bottom: 0.9rem;
+}
+.guide li strong {
+  color: var(--lampion);
+  font-weight: 500;
+}
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.6rem;
+  margin: 1.5rem 0;
+  max-width: none;
+}
+.palette-nuancier {
+  display: flex;
+  height: 3.2rem;
+  margin-bottom: 0.7rem;
+}
+.palette-nuancier span {
+  flex: 1;
+}
+.palette h3,
+.style h3 {
+  font-family: var(--font-titre), serif;
+  font-weight: 500;
+  font-size: var(--t-24);
+  margin: 0 0 0.4rem;
+}
+.palette p,
+.style p {
+  margin: 0 0 0.5rem;
+}
+.guide-suite {
+  margin-top: 1.4rem;
+  font-size: var(--t-18);
 }
 
 /* ─── Mobile & mouvement réduit ───────────────────────────────── */

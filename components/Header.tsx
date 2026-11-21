@@ -17,6 +17,9 @@ export default function Header() {
             {r.enseigne}
           </Link>
         ))}
+        <Link href="/inspiration" aria-current={path === "/inspiration" ? "page" : undefined}>
+          Inspiration
+        </Link>
       </nav>
     </header>
   );
