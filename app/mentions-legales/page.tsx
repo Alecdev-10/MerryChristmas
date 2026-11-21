@@ -5,8 +5,8 @@ export const metadata: Metadata = { title: "Mentions légales", robots: { index:
 
 export default function MentionsLegales() {
   return (
-    <div className="container prose">
-      <h1>Mentions légales</h1>
+    <div className="texte">
+      <h1 className="display">Mentions légales</h1>
 
       <h2>Éditeur du site</h2>
       {/* À COMPLÉTER : nom ou raison sociale, adresse, e-mail de contact */}

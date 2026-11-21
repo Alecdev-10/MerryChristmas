@@ -1,18 +1,25 @@
-import Showroom from "@/components/Showroom";
-import RayonGrid from "@/components/RayonGrid";
+import BulbSign from "@/components/BulbSign";
+import Boulevard from "@/components/Boulevard";
+import Stage from "@/components/Stage";
+
+const ENSEIGNE = ["Merry", "Christmas"];
 
 export default function HomePage() {
   return (
-    <div className="container">
-      <section className="hero">
-        <h1>La boutique déco de Noël</h1>
-        <p>Cinq rayons d'idées sélectionnées pour décorer le sapin, la maison, la table de fête et l'extérieur.</p>
+    <>
+      <Stage />
+      <section className="facade">
+        <h1 className="sr-only">MerryChristmas, les vitrines de Noël</h1>
+        <BulbSign lines={ENSEIGNE} />
+        <div className="facade-foot">
+          <p>Cinq vitrines de décoration de Noël. Essuyez la buée pour voir ce qu'il y a derrière.</p>
+          <div className="descend" aria-hidden="true">
+            <span />
+            Descendez le boulevard
+          </div>
+        </div>
       </section>
-
-      <Showroom />
-
-      <h2 className="section-title">Les rayons</h2>
-      <RayonGrid />
-    </div>
+      <Boulevard />
+    </>
   );
 }

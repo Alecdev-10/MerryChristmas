@@ -1,49 +1,60 @@
+export type SceneKey = "sapins" | "guirlandes" | "boules" | "table" | "exterieur";
+
 export type Rayon = {
   /** Adresse de la page : /{slug} */
   slug: string;
   /** Nom exact utilisé dans la colonne « Rayon » du tableur */
   name: string;
+  /** Lettrage doré sur la vitrine */
+  enseigne: string;
+  /** Titre de la page rayon */
   title: string;
+  /** Une phrase concrète : ce qu'on trouve dans le rayon */
   intro: string;
-  /** Couleur d'accent (vitrine 3D + cartes) */
-  color: string;
+  /** Scène 3D jouée derrière la vitre */
+  scene: SceneKey;
 };
 
 export const RAYONS: Rayon[] = [
   {
     slug: "sapins",
     name: "Sapins & pieds",
-    title: "Sapins de Noël et pieds de sapin",
-    intro: "Sapins artificiels, pieds stables et cache-pieds pour un sapin qui tient toute la saison.",
-    color: "#1f6b3a",
+    enseigne: "Les sapins",
+    title: "Sapins et pieds de sapin",
+    intro: "Sapins artificiels de 180 cm, pieds réglables et jupes pour cacher le pied.",
+    scene: "sapins",
   },
   {
     slug: "guirlandes",
     name: "Guirlandes & lumières",
-    title: "Guirlandes lumineuses de Noël",
-    intro: "Guirlandes LED, rideaux lumineux et déco qui brille, pour l'intérieur comme pour la chambre.",
-    color: "#d9a520",
+    enseigne: "Les lumières",
+    title: "Guirlandes et rideaux lumineux",
+    intro: "Guirlandes LED blanc chaud de 10 à 20 m, et rideaux d'étoiles pour les fenêtres.",
+    scene: "guirlandes",
   },
   {
     slug: "boules",
     name: "Boules & suspensions",
-    title: "Boules de Noël et suspensions",
-    intro: "Boules, étoiles et suspensions pour habiller le sapin, en rouge et or ou tout en blanc.",
-    color: "#b3261e",
+    enseigne: "Les boules",
+    title: "Boules et cimiers",
+    intro: "Lots de boules incassables rouge et or, et étoiles pour la pointe du sapin.",
+    scene: "boules",
   },
   {
     slug: "table-de-noel",
     name: "Table de Noël",
-    title: "Décoration de table de Noël",
-    intro: "Centres de table, chemins de table et bougies pour un repas de fête chaleureux.",
-    color: "#8a5a2b",
+    enseigne: "La table",
+    title: "La table du réveillon",
+    intro: "Chemins de table, centres de table à bougies et bougies LED sans flamme.",
+    scene: "table",
   },
   {
     slug: "exterieur",
     name: "Déco extérieure",
-    title: "Décoration de Noël extérieure",
-    intro: "Couronnes de porte, illuminations de jardin et déco de balcon résistantes à l'humidité.",
-    color: "#2f5d8a",
+    enseigne: "Le jardin",
+    title: "Porte d'entrée et jardin",
+    intro: "Couronnes de porte, guirlandes étanches IP44 et lanternes pour l'extérieur.",
+    scene: "exterieur",
   },
 ];
 

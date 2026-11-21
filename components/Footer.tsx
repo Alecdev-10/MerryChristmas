@@ -1,17 +1,14 @@
 import Link from "next/link";
-import { AFFILIATE_NOTICE, SITE_NAME } from "@/lib/site";
+import { AFFILIATE_NOTICE } from "@/lib/site";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="container">
-        <p style={{ margin: 0 }}>{AFFILIATE_NOTICE}</p>
-        <p style={{ margin: 0 }}>
-          Prix indicatifs, susceptibles de changer : le prix final est celui affiché sur Amazon.{" "}
-          <Link href="/mentions-legales">Mentions légales</Link>
-        </p>
-        <p style={{ margin: 0 }}>© {new Date().getFullYear()} {SITE_NAME}</p>
-      </div>
+      <p>{AFFILIATE_NOTICE}</p>
+      <p>Les prix affichés sont indicatifs : seul le prix indiqué sur Amazon au moment de l'achat fait foi.</p>
+      <p>
+        <Link href="/mentions-legales">Mentions légales</Link>
+      </p>
     </footer>
   );
 }

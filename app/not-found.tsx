@@ -1,11 +1,18 @@
-import RayonGrid from "@/components/RayonGrid";
+import Link from "next/link";
+import { RAYONS } from "@/data/rayons";
 
 export default function NotFound() {
   return (
-    <div className="container prose" style={{ maxWidth: "var(--max)" }}>
-      <h1>Page introuvable</h1>
-      <p>Cette page n'existe pas (ou plus). Voici nos rayons :</p>
-      <RayonGrid />
+    <div className="texte">
+      <h1 className="display">Cette vitrine n'existe pas.</h1>
+      <p>L'adresse est peut-être mal tapée. Les vitrines ouvertes :</p>
+      <ul>
+        {RAYONS.map((r) => (
+          <li key={r.slug}>
+            <Link href={`/${r.slug}`}>{r.title}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
