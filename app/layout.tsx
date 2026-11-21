@@ -21,7 +21,7 @@ const texte = Jost({
   display: "swap",
 });
 
-const pinterestVerify = process.env.NEXT_PUBLIC_PINTEREST_VERIFY;
+const pinterestVerify = process.env.NEXT_PUBLIC_PINTEREST_VERIFY || "be6c4a4e7b614b9ef6c062b1039b047b";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
