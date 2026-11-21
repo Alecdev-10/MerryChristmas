@@ -3,10 +3,13 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { Product } from "@/lib/products";
 import { withAffiliateTag } from "@/lib/site";
+import Illustration from "./Illustration";
+import { illusForProduct } from "@/lib/illustrations";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const euro = new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" });
 
@@ -35,15 +38,22 @@ export default function Fil({ products }: { products: Product[] }) {
     () => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
+        // Chaque étiquette tombe sur sa ficelle au moment où elle entre à l'écran
         const swings = gsap.utils.toArray<HTMLElement>(".etiquette-swing", root.current);
-        gsap.from(swings, {
-          y: -60,
-          rotation: () => gsap.utils.random(-9, 9),
-          opacity: 0,
-          duration: 2.4,
-          ease: "elastic.out(1, 0.25)",
-          stagger: 0.08,
-          delay: 0.25,
+        gsap.set(swings, { yPercent: -18, rotation: 0, autoAlpha: 0 });
+        ScrollTrigger.batch(swings, {
+          start: "top 92%",
+          once: true,
+          onEnter: (batch) =>
+            gsap.to(batch, {
+              yPercent: 0,
+              autoAlpha: 1,
+              keyframes: { rotation: [gsap.utils.random(-7, 7), 0] },
+              duration: 1.6,
+              ease: "elastic.out(1, 0.3)",
+              stagger: 0.09,
+              overwrite: true,
+            }),
         });
       });
       return () => mm.revert();
@@ -61,7 +71,7 @@ export default function Fil({ products }: { products: Product[] }) {
   return (
     <div ref={root} className="fil">
       {rows.map((row, r) => (
-        <div className={`fil-ligne${row.some((p) => p.image) ? "" : " sans-images"}`} key={r}>
+        <div className="fil-ligne" key={r}>
           <svg viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
             <path d="M0,6 Q500,134 1000,6" fill="none" stroke="#d9c9a8" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
           </svg>
@@ -76,13 +86,22 @@ export default function Fil({ products }: { products: Product[] }) {
                 >
                   <span className="etiquette-ficelle" style={{ height: slot.len }} />
                   <div className="etiquette-carton">
-                    {p.image && (
-                      <div className="etiquette-img">
-                        {/* Image fournie par Amazon (SiteStripe), affichée telle quelle */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <a
+                      className="etiquette-img"
+                      href={withAffiliateTag(p.url)}
+                      target="_blank"
+                      rel="sponsored noopener noreferrer"
+                      tabIndex={-1}
+                      aria-hidden="true"
+                    >
+                      {p.image ? (
+                        // Image fournie par Amazon (SiteStripe), affichée telle quelle
+                        // eslint-disable-next-line @next/next/no-img-element
                         <img src={p.image} alt="" loading="lazy" />
-                      </div>
-                    )}
+                      ) : (
+                        <Illustration kind={illusForProduct(p.name, p.rayon)} color="#3a1a10" stroke={1.8} />
+                      )}
+                    </a>
                     <p className="etiquette-nom">{p.name}</p>
                     {p.price != null && <p className="etiquette-prix">{euro.format(p.price)}</p>}
                     <a href={withAffiliateTag(p.url)} target="_blank" rel="sponsored noopener noreferrer">

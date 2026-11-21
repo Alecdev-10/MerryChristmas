@@ -247,14 +247,14 @@ function Bauble({
         <meshStandardMaterial color={C.laiton} metalness={1} roughness={0.3} />
       </mesh>
       <mesh position={[0, -len - r - 0.02, 0]}>
-        <sphereGeometry args={[r, 40, 40]} />
+        <sphereGeometry args={[r, 28, 28]} />
         <meshStandardMaterial color={color} metalness={0.9} roughness={0.12} envMapIntensity={1.4} />
       </mesh>
     </group>
   );
 }
 
-function SceneBoules({ active }: { active: boolean }) {
+function SceneBoules({ active, lite = false }: { active: boolean; lite?: boolean }) {
   const level = useLight(active);
   const balls = [
     { x: -1.6, len: 1.1, color: "#9e1b26", r: 0.28 },
@@ -268,7 +268,7 @@ function SceneBoules({ active }: { active: boolean }) {
     <>
       <Camera y={1.2} z={5.6} />
       <Lights level={level} />
-      <Environment resolution={128} frames={1}>
+      <Environment resolution={lite ? 32 : 128} frames={1}>
         <Lightformer intensity={3} color="#ffd39a" position={[0, 3, 3]} scale={[6, 2, 1]} />
         <Lightformer intensity={1.5} color="#ff9a7a" position={[-4, 1, 1]} scale={[2, 4, 1]} />
         <Lightformer intensity={0.6} color="#9fd0ff" position={[4, 1, -2]} scale={[2, 3, 1]} />
@@ -445,14 +445,14 @@ function SceneExterieur({ active }: { active: boolean }) {
   );
 }
 
-export function VitrineScene({ scene, active }: { scene: SceneKey; active: boolean }) {
+export function VitrineScene({ scene, active, lite = false }: { scene: SceneKey; active: boolean; lite?: boolean }) {
   switch (scene) {
     case "sapins":
       return <SceneSapins active={active} />;
     case "guirlandes":
       return <SceneGuirlandes active={active} />;
     case "boules":
-      return <SceneBoules active={active} />;
+      return <SceneBoules active={active} lite={lite} />;
     case "table":
       return <SceneTable active={active} />;
     case "exterieur":

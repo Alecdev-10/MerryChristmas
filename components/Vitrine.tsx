@@ -1,9 +1,12 @@
 "use client";
 
-import { forwardRef, useEffect, useRef, useState } from "react";
+import { forwardRef, memo, useEffect, useRef, useState } from "react";
 import { View } from "@react-three/drei";
 import Fog, { type FogHandle } from "./Fog";
 import { VitrineScene } from "./scenes";
+import Illustration from "./Illustration";
+import { ILLUS_BY_SCENE } from "@/lib/illustrations";
+import { useTier } from "@/lib/perf";
 import type { Rayon } from "@/data/rayons";
 
 type Props = {
@@ -16,6 +19,7 @@ const Vitrine = forwardRef<HTMLElement, Props>(function Vitrine({ rayon, active,
   const fog = useRef<FogHandle>(null);
   const hinted = useRef(false);
   const [wiped, setWiped] = useState(false);
+  const tier = useTier();
 
   // La première fois que la vitrine s'allume, un geste d'essuyage montre qu'on peut le faire
   useEffect(() => {
@@ -32,9 +36,13 @@ const Vitrine = forwardRef<HTMLElement, Props>(function Vitrine({ rayon, active,
       <h2 className="enseigne-vitrine">{rayon.enseigne}</h2>
 
       <div className="verre">
-        <View className="scene-view">
-          <VitrineScene scene={rayon.scene} active={active} />
-        </View>
+        {tier === "static" ? (
+          <Illustration kind={ILLUS_BY_SCENE[rayon.scene]} color="#f2b544" stroke={1.6} className="vitrine-dessin" />
+        ) : (
+          <View className="scene-view">
+            <VitrineScene scene={rayon.scene} active={active} lite={tier === "lite"} />
+          </View>
+        )}
         <div className="lueur" />
         <Fog ref={fog} active={active} onWipe={() => setWiped(true)} />
         <p className="indice" style={{ opacity: wiped ? 0 : 0.75 }}>
@@ -57,4 +65,4 @@ const Vitrine = forwardRef<HTMLElement, Props>(function Vitrine({ rayon, active,
   );
 });
 
-export default Vitrine;
+export default memo(Vitrine);

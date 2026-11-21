@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useImperativeHandle, useRef, forwardRef } from "react";
+import { getTier } from "@/lib/perf";
 
 export type FogHandle = {
   /** Trace automatiquement un geste d'essuyage, pour montrer qu'on peut le faire */
@@ -36,7 +37,7 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    const dpr = getTier() === "full" ? Math.min(window.devicePixelRatio || 1, 1.5) : 1;
     const mask = document.createElement("canvas");
     const mctx = mask.getContext("2d")!;
     const texture = document.createElement("canvas");
@@ -45,6 +46,8 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
     let h = 0;
     let raf = 0;
     let visible = false;
+    let running = false;
+    let lastTouch = 0; // dernier essuyage : la buée ne se redessine que pendant qu'elle revient
     let last: { x: number; y: number } | null = null;
     let clearing = 0; // 0..1 : dissipation complète
 
@@ -82,6 +85,9 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
       mask.width = w;
       mask.height = h;
       paintTexture();
+      // Redimensionner efface le canvas : on redessine une fois
+      lastTouch = Math.min(lastTouch, performance.now() - 6500);
+      kick();
     };
 
     const wipe = (x: number, y: number) => {
@@ -99,6 +105,8 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
         mctx.fillRect(px - R, py - R, R * 2, R * 2);
       }
       last = { x, y };
+      lastTouch = performance.now();
+      kick();
       if (!wipedRef.current) {
         wipedRef.current = true;
         onWipeRef.current?.();
@@ -120,6 +128,16 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
       ctx.globalCompositeOperation = "destination-out";
       ctx.drawImage(mask, 0, 0);
       ctx.globalCompositeOperation = "source-over";
+      // Plus rien ne bouge depuis 7 s : la buée est revenue, on arrête de redessiner
+      if (performance.now() - lastTouch > 7000 && (clearing === 0 || clearing === 1)) {
+        running = false;
+        return;
+      }
+      raf = requestAnimationFrame(frame);
+    };
+    const kick = () => {
+      if (!visible || running) return;
+      running = true;
       raf = requestAnimationFrame(frame);
     };
 
@@ -158,6 +176,8 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
       const t0 = performance.now();
       const run = (now: number) => {
         clearing = Math.min(1, (now - t0) / 500);
+        lastTouch = performance.now();
+        kick();
         if (clearing < 1) requestAnimationFrame(run);
       };
       requestAnimationFrame(run);
@@ -167,7 +187,11 @@ const Fog = forwardRef<FogHandle, { active: boolean; onWipe?: () => void }>(func
       ([entry]) => {
         visible = entry.isIntersecting;
         cancelAnimationFrame(raf);
-        if (visible) raf = requestAnimationFrame(frame);
+        running = false;
+        if (visible) {
+          lastTouch = performance.now() - 6500; // un rendu, puis repos
+          kick();
+        }
       },
       { rootMargin: "0px 200px" }
     );

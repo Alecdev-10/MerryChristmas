@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { getTier } from "@/lib/perf";
 
 type Bulb = { x: number; y: number; delay: number; flicker: number; on: number };
 
@@ -22,7 +23,7 @@ export default function BulbSign({ lines }: { lines: string[] }) {
     if (!ctx) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = Math.min(window.devicePixelRatio || 1, getTier() === "full" ? 2 : 1.25);
     const state = { progress: reduced ? 1 : 0 };
     const pointer = { x: -9999, y: -9999 };
     let bulbs: Bulb[] = [];
@@ -135,7 +136,7 @@ export default function BulbSign({ lines }: { lines: string[] }) {
     let start = performance.now();
     const loop = (now: number) => {
       draw(now - start);
-      raf = requestAnimationFrame(loop);
+      if (onScreen) raf = requestAnimationFrame(loop);
     };
 
     const onMove = (e: PointerEvent) => {
@@ -157,12 +158,20 @@ export default function BulbSign({ lines }: { lines: string[] }) {
 
     const ro = new ResizeObserver(() => layout());
     ro.observe(box);
+    let onScreen = true;
+    const io = new IntersectionObserver(([e]) => {
+      const was = onScreen;
+      onScreen = e.isIntersecting;
+      if (onScreen && !was) raf = requestAnimationFrame(loop);
+    });
+    io.observe(box);
     window.addEventListener("pointermove", onMove, { passive: true });
 
     return () => {
       cancelAnimationFrame(raf);
       tween?.kill();
       ro.disconnect();
+      io.disconnect();
       window.removeEventListener("pointermove", onMove);
     };
   }, [lines]);

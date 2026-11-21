@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { getTier } from "@/lib/perf";
 
 type Flake = { x: number; y: number; r: number; vy: number; drift: number; phase: number; px: number; py: number };
 
@@ -46,7 +47,8 @@ export default function Snow() {
       canvas.width = w * dpr;
       canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const count = Math.round(Math.min(220, (w * h) / 7000));
+      const density = getTier() === "lite" ? 0.45 : 1;
+      const count = Math.round(Math.min(220, (w * h) / 7000) * density);
       flakes = Array.from({ length: count }, () => make());
     };
 
