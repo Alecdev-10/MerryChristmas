@@ -1,11 +1,12 @@
-"""Visuels d'épingles Pinterest (1000×1500) au style « Vitrines embuées ».
+"""Affiches Pinterest (1000×1500) — série « Imprimé à Noël ».
 
-Rendu dans un vrai navigateur (Playwright + Chrome) pour avoir les polices du site
-(Bodoni Moda, Jost) et le flou de la buée.
+Direction : affiches imprimées en risographie (deux encres, or et blanc, sur papier velours),
+avec le léger décalage de repérage, la trame de points et le grain du papier propres à ce procédé.
+Trois mises en page alternent pour que le fil Pinterest ne se répète pas.
 
+Rendu dans un vrai navigateur (Playwright + Chrome) pour les polices du site (Bodoni Moda, Jost).
 Usage : python scripts/pins/make_pins.py [tableur.xlsx]
 Prérequis : pip install playwright openpyxl && playwright install chromium
-Les polices sont dans scripts/pins/fonts/, les dessins dans data/illustrations.json.
 """
 import html
 import json
@@ -21,12 +22,22 @@ ROOT = HERE.parent.parent if (HERE.parent.parent / "data").exists() else HERE
 ILLUS = json.loads((ROOT / "data" / "illustrations.json").read_text(encoding="utf-8"))
 OUT = ROOT / "pins"
 
-ENSEIGNE = {
-    "Sapins & pieds": "Les sapins",
-    "Guirlandes & lumières": "Les lumières",
-    "Boules & suspensions": "Les boules",
-    "Table de Noël": "La table",
-    "Déco extérieure": "Le jardin",
+# Un papier et deux encres par rayon, comme une vraie série riso tirée sur cinq papiers différents
+PALETTES = {
+    "Sapins & pieds": {"papier": "#16352f", "a": "#f3eef2", "b": "#f2b544", "blend": "screen"},
+    "Guirlandes & lumières": {"papier": "#f2b544", "a": "#7a1222", "b": "#1e4c4a", "blend": "multiply"},
+    "Boules & suspensions": {"papier": "#4a0d16", "a": "#f3eef2", "b": "#f2b544", "blend": "screen"},
+    "Table de Noël": {"papier": "#e8b4a6", "a": "#4a0d16", "b": "#1e4c4a", "blend": "multiply"},
+    "Déco extérieure": {"papier": "#bcd3db", "a": "#7a1222", "b": "#16352f", "blend": "multiply"},
+}
+DEFAUT = PALETTES["Boules & suspensions"]
+
+RAYON = {
+    "Sapins & pieds": "les sapins",
+    "Guirlandes & lumières": "les lumières",
+    "Boules & suspensions": "les boules",
+    "Table de Noël": "la table",
+    "Déco extérieure": "le jardin",
 }
 
 RULES = [
@@ -46,86 +57,116 @@ def kind_for(title: str) -> str:
     return "sapin"
 
 
-def svg_for(kind: str, color: str, stroke: float) -> str:
-    """Vitre embuée : dessin flou partout, net seulement là où la buée a été essuyée."""
-    W, H = 732, 672  # intérieur de la vitre (px)
-    s = 430  # taille du dessin
-    x, y = (W - s) / 2, (H - s) / 2 + 30
-    paths = "".join(
-        f'<path d="{e["d"]}" fill="{color if e["fill"] else "none"}" stroke="{color}" '
-        f'stroke-width="{stroke}" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>'
+def dessin(kind: str, color: str, stroke: float, fill_color: str | None = None) -> str:
+    """Le dessin au trait, épaissi pour l'affiche (le trait grossit avec la taille)."""
+    fc = fill_color or color
+    return "".join(
+        f'<path d="{e["d"]}" fill="{fc if e["fill"] else "none"}" stroke="{color}" '
+        f'stroke-width="{stroke}" stroke-linecap="round" stroke-linejoin="round"/>'
         for e in ILLUS[kind]
     )
-    dessin = f'<svg x="{x}" y="{y}" width="{s}" height="{s}" viewBox="0 0 120 120">{paths}</svg>'
-    # Le geste d'essuyage : un revers de main en arc, plus un petit second passage
-    wipe = (
-        f'<path d="M{W*.1} {H*.68} C{W*.3} {H*.38} {W*.66} {H*.32} {W*.9} {H*.52}" stroke-width="{H*.2}"/>'
-        f'<path d="M{W*.28} {H*.82} C{W*.44} {H*.7} {W*.6} {H*.7} {W*.74} {H*.76}" stroke-width="{H*.09}"/>'
+
+
+def illus_block(kind: str, x: float, y: float, size: float, pal: dict, stroke: float = 3.2) -> str:
+    """Deux passages d'encre légèrement décalés (repérage riso) : encre B dessous, encre A dessus."""
+    off = size * 0.013
+    return (
+        f'<g filter="url(#encre)"><svg x="{x + off}" y="{y + off * 0.7}" width="{size}" height="{size}" viewBox="0 0 120 120" class="encre-b">'
+        f'{dessin(kind, pal["b"], stroke)}</svg>'
+        f'<svg x="{x}" y="{y}" width="{size}" height="{size}" viewBox="0 0 120 120" class="encre-a">'
+        f'{dessin(kind, pal["a"], stroke)}</svg></g>'
     )
-    gouttes = "".join(
-        f'<circle cx="{(i*97)%W}" cy="{(i*53)%H}" r="{1.2+(i%3)*.6}" fill="#fff" opacity=".35"/>' for i in range(1, 260)
+
+
+def soleil(cx: float, cy: float, r: float, pal: dict) -> str:
+    """Disque en trame de points (demi-teinte), les points grossissent vers le centre."""
+    dots = []
+    step = 15
+    for gy in range(int(cy - r), int(cy + r), step):
+        for gx in range(int(cx - r), int(cx + r), step):
+            d = ((gx - cx) ** 2 + (gy - cy) ** 2) ** 0.5
+            if d > r:
+                continue
+            k = 1 - d / r
+            rad = 1.2 + 5.6 * k ** 0.8
+            dots.append(f'<circle cx="{gx}" cy="{gy}" r="{rad:.1f}"/>')
+    return f'<g fill="{pal["b"]}" opacity=".6" class="encre-b">{"".join(dots)}</g>'
+
+
+def flocons(seed: int, color: str, n: int = 46) -> str:
+    out = []
+    for i in range(n):
+        x = (seed * 131 + i * 227) % 1000
+        y = (seed * 71 + i * 389) % 1500
+        r = 1.5 + (i * 7 % 5) * 0.8
+        out.append(f'<circle cx="{x}" cy="{y}" r="{r}"/>')
+    return f'<g fill="{color}" opacity=".5">{"".join(out)}</g>'
+
+
+def layout(i: int, kind: str, pal: dict) -> str:
+    """Trois compositions qui alternent."""
+    v = i % 3
+    if v == 0:
+        # Dessin géant qui déborde à droite, soleil tramé derrière
+        return soleil(640, 560, 360, pal) + illus_block(kind, 280, 140, 800, pal, 3.4)
+    if v == 1:
+        # Dessin centré bas, posé sur une ligne d'horizon, soleil au-dessus
+        return (
+            soleil(500, 980, 300, pal)
+            + f'<line x1="0" y1="1290" x2="1000" y2="1290" stroke="{pal["b"]}" stroke-width="5"/>'
+            + illus_block(kind, 170, 620, 660, pal, 3.6)
+        )
+    # Dessin incliné en haut à gauche, comme un tampon
+    return (
+        soleil(380, 420, 330, pal)
+        + f'<g transform="rotate(-9 380 420)">{illus_block(kind, 50, 90, 660, pal, 3.6)}</g>'
     )
-    return f"""<svg class="scene" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <filter id="flou" filterUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><feGaussianBlur stdDeviation="9"/></filter>
-    <filter id="halo" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="bord" filterUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><feGaussianBlur stdDeviation="16"/></filter>
-    <mask id="essuye"><rect width="{W}" height="{H}" fill="black"/>
-      <g fill="none" stroke="white" stroke-linecap="round" filter="url(#bord)">{wipe}</g></mask>
-    <mask id="buee"><rect width="{W}" height="{H}" fill="white"/>
-      <g fill="none" stroke="black" stroke-linecap="round" filter="url(#bord)">{wipe}</g></mask>
-  </defs>
-  <g filter="url(#flou)" opacity=".85">{dessin}</g>
-  <g mask="url(#buee)"><rect width="{W}" height="{H}" fill="rgba(236,228,232,.46)"/>{gouttes}</g>
-  <g mask="url(#essuye)" filter="url(#halo)">{dessin}</g>
-</svg>"""
 
 
-def bulbs(n: int) -> str:
-    return "".join('<i class="ampoule"></i>' for _ in range(n))
-
+TITRE_POS = {0: "bas", 1: "haut", 2: "bas-droite"}
 
 TEMPLATE = """<!doctype html><html lang="fr"><head><meta charset="utf-8"><style>
 @font-face{{font-family:Bodoni;src:url(fonts/bodoni.woff2) format("woff2");font-weight:400 900}}
 @font-face{{font-family:Bodoni;font-style:italic;src:url(fonts/bodoni-italic.woff2) format("woff2");font-weight:400 900}}
 @font-face{{font-family:Jost;src:url(fonts/jost.woff2) format("woff2");font-weight:100 900}}
 *{{box-sizing:border-box;margin:0}}
-body{{width:1000px;height:1500px;overflow:hidden;background:#4a0d16;color:#f3eef2;font-family:Jost,sans-serif;position:relative}}
-body::before{{content:"";position:absolute;inset:0;background:radial-gradient(90% 55% at 50% 38%,#64162a 0%,transparent 70%)}}
-.guirlande{{position:absolute;top:44px;left:60px;right:60px;display:flex;justify-content:space-between}}
-.ampoule{{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle,#fff4d6 0 22%,#f2b544 45%,rgba(242,181,68,0) 72%);box-shadow:0 0 24px 8px rgba(242,181,68,.35)}}
-.vitrine{{position:absolute;left:120px;right:120px;top:150px;height:880px}}
-.marquise{{height:70px;margin:0 -22px;background:repeating-linear-gradient(90deg,#2a070d 0 40px,#f3eef2 40px 80px);clip-path:polygon(0 0,100% 0,100% 62%,97% 100%,3% 100%,0 62%);filter:drop-shadow(0 14px 12px rgba(0,0,0,.5))}}
-.enseigne{{text-align:center;font-family:Bodoni;font-style:italic;font-weight:500;font-size:46px;color:#f2b544;margin:16px 0 14px;text-shadow:0 2px 0 #6b4a14}}
-.verre{{position:relative;height:700px;border-radius:46% 46% 0 0/16% 16% 0 0;overflow:hidden;
-  background:radial-gradient(70% 60% at 50% 62%,#7a2433 0%,#3a0b14 70%);
-  box-shadow:inset 0 0 0 14px #b38a4d,inset 0 0 0 17px #6b4f22,0 0 0 8px #2a070d}}
-.scene{{position:absolute;inset:14px;width:calc(100% - 28px);height:calc(100% - 28px)}}
-.titre{{position:absolute;left:96px;right:96px;top:1084px;font-family:Bodoni;font-weight:700;font-size:{size}px;line-height:1.04;letter-spacing:0;font-variation-settings:'opsz' 11;text-wrap:balance}}
-.pied{{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:baseline;font-size:25px;color:rgba(243,238,242,.78)}}
-.pied b{{font-family:Bodoni;font-style:italic;font-weight:500;font-size:34px;color:#f3eef2}}
+body{{width:1000px;height:1500px;overflow:hidden;background:{papier};color:{blanc};font-family:Jost,sans-serif;position:relative}}
+.art{{position:absolute;inset:0;width:1000px;height:1500px}}
+.encre-a,.encre-b{{mix-blend-mode:{blend}}}
+.titre{{position:absolute;font-family:Bodoni;font-weight:800;font-variation-settings:'opsz' 11;line-height:.98;letter-spacing:-.01em;color:{a};
+  text-shadow:5px 4px 0 {b}}}
+.titre em{{font-style:italic;font-weight:600}}
+.bas{{left:70px;right:70px;bottom:150px;font-size:{size}px}}
+.haut{{left:70px;right:70px;top:110px;font-size:{size}px}}
+.bas-droite{{left:200px;right:70px;bottom:150px;font-size:{size}px;text-align:right}}
+.pied{{position:absolute;left:70px;right:70px;bottom:58px;display:flex;justify-content:space-between;align-items:baseline;font-size:25px;color:{a};opacity:.85}}
+.pied b{{font-family:Bodoni;font-style:italic;font-weight:600;font-size:34px}}
+.grain{{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.35;pointer-events:none}}
 </style></head><body>
-<div class="guirlande">{bulbs}</div>
-<div class="vitrine">
-  <div class="marquise"></div>
-  <div class="enseigne">{enseigne}</div>
-  <div class="verre">{svg}</div>
-</div>
-<h1 class="titre">{titre}</h1>
-<div class="pied"><b>MerryChristmas</b><span>{host}</span></div>
+<svg class="art" viewBox="0 0 1000 1500"><defs>
+<filter id="encre" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="{seed}" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" result="d"/>
+  <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="{seed}" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3 2.75" result="trous"/>
+  <feComposite in="d" in2="trous" operator="in"/>
+</filter></defs>{flocons}{art}</svg>
+<h1 class="titre {pos}">{titre}</h1>
+<div class="pied"><b>MerryChristmas, {rayon}</b><span>{host}</span></div>
+<svg class="grain" viewBox="0 0 1000 1500"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="{seed}"/><feColorMatrix values="0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.4 -.35"/></filter><rect width="1000" height="1500" filter="url(#g)"/></svg>
 </body></html>"""
 
-# Masque : blanc = buée, noir = vitre essuyée (un revers de main en arc)
-MASK = (
-    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'>"
-    "<defs><filter id='f'><feGaussianBlur stdDeviation='2.2'/></filter></defs>"
-    "<rect width='100' height='100' fill='white'/>"
-    "<path d='M14 66 C30 40 64 34 86 52' stroke='black' stroke-width='19' fill='none' stroke-linecap='round' filter='url(%23f)'/>"
-    "<path d='M30 78 C46 66 62 66 74 72' stroke='black' stroke-width='10' fill='none' stroke-linecap='round' filter='url(%23f)'/>"
-    "</svg>"
-)
+
+def split_title(t: str) -> str:
+    """Si le titre a deux parties (avant/après « : »), la seconde passe en italique, sur sa ligne."""
+    t = html.escape(t)
+    if " : " in t:
+        a, b = t.split(" : ", 1)
+        return f"{a}<br><em>{b}</em>"
+    if ", " in t:
+        a, b = t.split(", ", 1)
+        return f"{a},<br><em>{b}</em>"
+    return t
 
 
 def main():
@@ -138,20 +179,21 @@ def main():
         browser = p.chromium.launch(executable_path=exe) if exe else p.chromium.launch()
         page = browser.new_page(viewport={"width": 1000, "height": 1500})
         n = 0
-        for row in ws.iter_rows(min_row=3, values_only=True):
+        for i, row in enumerate(ws.iter_rows(min_row=3, values_only=True)):
             pin_id, title, _d, board, _kw, _pid, _prod, url = row[:8]
             if not pin_id or not title or not url:
                 continue
-            size = 84 if len(title) < 34 else 74 if len(title) < 48 else 66
-            host = str(url).split("//")[-1].split("/")[0]
+            title = str(title)
+            size = 104 if len(title) < 34 else 92 if len(title) < 48 else 82
+            pal = PALETTES.get(str(board), DEFAUT)
             doc = TEMPLATE.format(
-                mask=MASK.replace("<", "%3C").replace(">", "%3E").replace("#", "%23"),
-                size=size,
-                bulbs=bulbs(19),
-                enseigne=html.escape(ENSEIGNE.get(str(board), "La vitrine")),
-                svg=svg_for(kind_for(str(title)), "#f2b544", 2.4),
-                titre=html.escape(str(title)),
-                host=html.escape(host),
+                papier=pal["papier"], blanc=pal["a"], a=pal["a"], b=pal["b"], blend=pal["blend"], size=size, seed=i + 3,
+                flocons=flocons(i + 1, pal["a"]),
+                art=layout(i, kind_for(title), pal),
+                pos=TITRE_POS[i % 3],
+                titre=split_title(title),
+                rayon=html.escape(RAYON.get(str(board), "la vitrine")),
+                host=html.escape(str(url).split("//")[-1].split("/")[0]),
             )
             work.write_text(doc, encoding="utf-8")
             page.goto(work.as_uri())
@@ -163,7 +205,7 @@ def main():
             n += 1
         browser.close()
     work.unlink(missing_ok=True)
-    print(f"{n} visuel(s) générés dans pins/")
+    print(f"{n} affiche(s) générée(s) dans pins/")
 
 
 if __name__ == "__main__":
