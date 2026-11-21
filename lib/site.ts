@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION =
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://merry-christmas-rust-xi.vercel.app").replace(/\/$/, "");
 
-export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "votreid-21";
+export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "merrychris055-21";
 
 export const AFFILIATE_NOTICE =
   "Liens affiliés : en tant que Partenaire Amazon, nous touchons une commission sur les achats remplissant les conditions requises, sans surcoût pour vous.";
