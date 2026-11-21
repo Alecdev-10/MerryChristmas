@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AFFILIATE_NOTICE, SITE_NAME } from "@/lib/site";
+import { AFFILIATE_NOTICE, AMAZON_TAG, CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = { title: "Mentions légales", robots: { index: false } };
 
@@ -9,8 +9,15 @@ export default function MentionsLegales() {
       <h1 className="display">Mentions légales</h1>
 
       <h2>Éditeur du site</h2>
-      {/* À COMPLÉTER : nom ou raison sociale, adresse, e-mail de contact */}
-      <p>{SITE_NAME} — [Nom de l'éditeur] — [Adresse] — [E-mail de contact]</p>
+      <p>
+        {SITE_NAME} est édité par Alec, particulier, qui en est aussi le directeur de la publication. Identifiant
+        Amazon Partenaires : {AMAZON_TAG}.
+      </p>
+      {CONTACT_EMAIL && (
+        <p>
+          Contact : <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        </p>
+      )}
 
       <h2>Hébergement</h2>
       <p>Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis — vercel.com</p>

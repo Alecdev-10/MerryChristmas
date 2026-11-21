@@ -4,6 +4,9 @@ export const SITE_DESCRIPTION =
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://merry-christmas-rust-xi.vercel.app").replace(/\/$/, "");
 
+// E-mail de contact affiché dans les mentions légales
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "merrychristmas2026.contact@gmail.com";
+
 export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "merrychris055-21";
 
 export const AFFILIATE_NOTICE =
