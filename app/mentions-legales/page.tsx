@@ -42,7 +42,9 @@ export default function MentionsLegales() {
 
       <h2>Données personnelles</h2>
       <p>
-        Ce site ne collecte aucune donnée personnelle et ne dépose pas de cookie. Lorsque vous cliquez sur un lien
+        Ce site ne collecte aucune donnée personnelle et ne dépose pas de cookie. Il mesure son audience de façon
+        anonyme avec Vercel Web Analytics (pages vues, pays, type d&apos;appareil, site d&apos;origine), sans cookie ni
+        identifiant personnel. Lorsque vous cliquez sur un lien
         Amazon, la politique de confidentialité d'Amazon s'applique.
       </p>
     </div>
