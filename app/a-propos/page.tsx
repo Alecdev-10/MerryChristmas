@@ -14,18 +14,12 @@ export default function APropos() {
       <h1 className="display">À propos</h1>
       <p>
         {SITE_NAME} est une petite boutique de décoration de Noël tenue par Alec. L&apos;idée : vous faire gagner du
-        temps en rassemblant, rayon par rayon, des décorations faciles à commander et livrées avant Noël.
-      </p>
-      <h2>Comment nous choisissons</h2>
-      <p>
-        Chaque produit est retenu pour sa note client, son nombre d&apos;avis et sa disponibilité sur Amazon.fr.
-        Nous retirons ceux qui baissent ou ne sont plus en stock. Nous proposons trois gammes de prix dans chaque rayon, pour que chacun trouve son
-        compte.
+        temps en rassemblant, rayon par rayon, des décorations faciles à commander sur Amazon.
       </p>
       <h2>Comment fonctionne la boutique</h2>
       <p>
-        Les produits sont vendus et expédiés par Amazon. Quand vous cliquez sur un article, vous arrivez sur sa page
-        Amazon, où vous retrouvez le prix du jour, les avis et les conditions de retour.
+        Les commandes se font sur Amazon. Quand vous cliquez sur un article, vous arrivez sur sa page Amazon, où vous
+        retrouvez le prix du jour, le vendeur, le délai de livraison, les avis et les conditions de retour.
       </p>
       <p>{AFFILIATE_NOTICE}</p>
       <p>

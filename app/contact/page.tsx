@@ -20,7 +20,7 @@ export default function Contact() {
       <p>Nous répondons sous 48 heures.</p>
       <p>
         Pour une commande (livraison, retour, remboursement), contactez directement le service client Amazon : les
-        produits sont vendus et expédiés par Amazon.
+        commandes se passent sur Amazon.
       </p>
     </div>
   );
