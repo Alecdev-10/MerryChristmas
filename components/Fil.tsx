@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { Product } from "@/lib/products";
 import { withAffiliateTag } from "@/lib/site";
 import Illustration from "./Illustration";
+import { ambiance } from "@/lib/ambiance";
 import { illusForProduct } from "@/lib/illustrations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -95,9 +96,15 @@ export default function Fil({ products }: { products: Product[] }) {
                       aria-hidden="true"
                     >
                       {p.image ? (
-                        // Image fournie par Amazon (SiteStripe), affichée telle quelle
+                        // Image officielle Amazon (API), affichée telle quelle
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={p.image} alt="" loading="lazy" />
+                      ) : ambiance(p.id) ? (
+                        <>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img className="photo-ambiance" src={ambiance(p.id)!} alt="" loading="lazy" decoding="async" />
+                          <span className="legende-ambiance">Photo d&apos;ambiance</span>
+                        </>
                       ) : (
                         <Illustration kind={illusForProduct(p.name, p.rayon)} color="#3a1a10" stroke={1.8} />
                       )}

@@ -6,6 +6,7 @@ import EntreeVitrine from "@/components/EntreeVitrine";
 import { RAYONS, getRayon } from "@/data/rayons";
 import { getProductsByRayon } from "@/lib/products";
 import { AFFILIATE_NOTICE } from "@/lib/site";
+import { ambiance } from "@/lib/ambiance";
 
 type Props = { params: Promise<{ rayon: string }> };
 
@@ -48,6 +49,20 @@ export default async function RayonPage({ params }: Props) {
       <h1 className="rayon-titre display">{rayon.title}</h1>
       <p className="rayon-intro">{rayon.intro}</p>
       <p className="rayon-note">{AFFILIATE_NOTICE}</p>
+
+      {ambiance(rayon.slug) && (
+        <figure className="rayon-photo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={ambiance(rayon.slug, 1600, 700)!}
+            srcSet={`${ambiance(rayon.slug, 800, 520)} 800w, ${ambiance(rayon.slug, 1600, 700)} 1600w`}
+            sizes="(max-width: 760px) 100vw, 90vw"
+            alt=""
+            decoding="async"
+          />
+          <figcaption>Photo d&apos;ambiance</figcaption>
+        </figure>
+      )}
 
       {products.length > 0 ? (
         <Fil products={products} />

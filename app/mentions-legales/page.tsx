@@ -33,6 +33,13 @@ export default function MentionsLegales() {
         indiqués sur Amazon au moment de l'achat font foi.
       </p>
 
+      <h2>Photos</h2>
+      <p>
+        Les photos légendées « Photo d&apos;ambiance » proviennent d&apos;Unsplash et sont utilisées sous licence Unsplash.
+        Elles illustrent un type de décoration et ne représentent pas les produits vendus : pour voir un produit, ouvrez sa
+        page Amazon.
+      </p>
+
       <h2>Données personnelles</h2>
       <p>
         Ce site ne collecte aucune donnée personnelle et ne dépose pas de cookie. Lorsque vous cliquez sur un lien
