@@ -17,7 +17,7 @@ export default function Contact() {
           {CONTACT_EMAIL}
         </a>
       </p>
-      <p>Nous répondons sous 48 heures.</p>
+      <p>Nous répondons sous 24 heures.</p>
       <p>
         Pour une commande (livraison, retour, remboursement), contactez directement le service client Amazon : les
         commandes se passent sur Amazon.
