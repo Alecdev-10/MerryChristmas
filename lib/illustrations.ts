@@ -10,6 +10,7 @@ export const ILLUSTRATIONS = data as Record<IllusKind, IllusElement[]>;
 export function illusForProduct(name: string, rayon: string): IllusKind {
   const n = name.toLowerCase();
   const rules: [RegExp, IllusKind][] = [
+    [/calendrier/, "village"],
     [/village|maison/, "village"],
     [/casse-noisette|figurine|santon|personnage/, "figurine"],
     [/cache-pied|jupe/, "jupe"],

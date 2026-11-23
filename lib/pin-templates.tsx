@@ -171,7 +171,7 @@ function FVitrine({ p, ens }: { p: Pin; ens: string }) {
 function FGrille({ p }: { p: Pin }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", width: 1000, height: 1500, background: V.velours, padding: "80px 60px 50px" }}>
-      <Bandeau text="Petit budget" />
+      <Bandeau text={p.band ?? "Petit budget"} />
       <div style={{ display: "flex", flexShrink: 0, marginTop: 26 }}>
         <Titre text={p.img} size={88} />
       </div>
