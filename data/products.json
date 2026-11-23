@@ -23,36 +23,36 @@
   },
   {
     "id": "P003",
-    "name": "Pied de sapin réglable avec réservoir d'eau (DIWA)",
+    "name": "Pied de sapin de Noël à levier, fixation en un geste (Brandsseller)",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B07KPQPX7C",
+    "url": "https://www.amazon.fr/dp/B08KTGQVLY",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Petit prix",
-    "benefice": "Se règle sur le tronc et garde l'eau : idéal pour un sapin naturel."
+    "gamme": "Milieu de gamme",
+    "benefice": "Le sapin se bloque d'un coup de pied, bien droit, sans visser."
   },
   {
     "id": "P004",
-    "name": "Cache-pied de sapin en fausse fourrure 120 cm (NICEWAT)",
+    "name": "Jupe de sapin en fausse fourrure blanche (KONVINIT)",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B0CHNZLY32",
+    "url": "https://www.amazon.fr/dp/B0B5SVM6H1",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "Cache le pied sous une fausse fourrure blanche, effet neige."
+    "benefice": "Cache le pied sous un tapis blanc, effet neige immédiat."
   },
   {
     "id": "P005",
-    "name": "Jupe de sapin de Noël 90 cm",
+    "name": "Grande jupe de sapin en fausse fourrure, 122 cm",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B0CHF55ZFP",
+    "url": "https://www.amazon.fr/dp/B0DDC4PJJW",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "La finition qui fait passer le sapin de correct à photo."
+    "benefice": "Assez large pour un sapin de 180 cm et plus."
   },
   {
     "id": "P006",
@@ -67,25 +67,25 @@
   },
   {
     "id": "P007",
-    "name": "Guirlande lumineuse intérieure 10 m, 100 LED blanc chaud à piles (Feeric)",
+    "name": "Lot de 3 guirlandes à piles 10 m, 100 LED, télécommande",
     "rayon": "Guirlandes & lumières",
-    "url": "https://www.amazon.fr/dp/B07YQMWJKN",
+    "url": "https://www.amazon.fr/dp/B0CBMWRP7F",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "À piles, sans fil à cacher : pour une étagère ou une couronne."
+    "benefice": "Sans fil à cacher : pour une étagère, une couronne ou une fenêtre."
   },
   {
     "id": "P008",
-    "name": "Guirlande 200 LED 10 m blanc chaud, intérieur et extérieur (Monzana)",
+    "name": "Guirlande lumineuse 20 m, 200 LED, télécommande (btfarm)",
     "rayon": "Guirlandes & lumières",
-    "url": "https://www.amazon.fr/dp/B01MDNJZET",
+    "url": "https://www.amazon.fr/dp/B0HDSD56KB",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "200 LED blanc chaud pour habiller un sapin de 120 cm."
+    "benefice": "20 mètres pour habiller un sapin de 150 cm, dedans comme dehors."
   },
   {
     "id": "P009",
@@ -100,14 +100,14 @@
   },
   {
     "id": "P010",
-    "name": "Rideau lumineux de fenêtre 138 LED avec 12 étoiles (Qedertek)",
+    "name": "Rideau lumineux étoiles 2,4 m, 138 LED, 8 modes (iShabao)",
     "rayon": "Guirlandes & lumières",
-    "url": "https://www.amazon.fr/dp/B0CKQYN865",
+    "url": "https://www.amazon.fr/dp/B0B1V23H2V",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "12 étoiles qui pendent à des hauteurs différentes."
+    "benefice": "Des étoiles à hauteurs différentes : une fenêtre nue devient un décor."
   },
   {
     "id": "P011",
@@ -122,14 +122,14 @@
   },
   {
     "id": "P012",
-    "name": "Lot de 9 boules de Noël pailletées rouge et or, 6 cm (Premier)",
+    "name": "Lot de 10 grosses boules de Noël rouges, 10 cm (Toyland)",
     "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B01N8V1GQ1",
+    "url": "https://www.amazon.fr/dp/B005RZA3ZU",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Petit prix",
-    "benefice": "Paillettes rouge et or pour les branches du bord."
+    "gamme": "Milieu de gamme",
+    "benefice": "De grosses boules à glisser près du tronc pour donner de la profondeur."
   },
   {
     "id": "P013",
@@ -155,47 +155,47 @@
   },
   {
     "id": "P015",
-    "name": "Cimier étoile blanche pailletée (Wedestock)",
+    "name": "Cimier étoile dorée pour sapin de Noël",
     "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B07JG187BW",
+    "url": "https://www.amazon.fr/dp/B09G96PDNW",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "Étoile blanche pailletée, parfaite sur un sapin floqué."
+    "benefice": "L'étoile dorée qui termine un sapin rouge et or ou blanc et doré."
   },
   {
     "id": "P016",
-    "name": "Chemin de table de Noël étoiles dorées 275 x 28 cm (NIXRET)",
+    "name": "Chemin de table de Noël rouge 270 x 28 cm",
     "rayon": "Table de Noël",
-    "url": "https://www.amazon.fr/dp/B0HC37RYQX",
+    "url": "https://www.amazon.fr/dp/B0CHTMHDBK",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "Étoiles dorées pour une table champagne et or."
+    "benefice": "Le rouge du sapin repris sur la table en un geste."
   },
   {
     "id": "P017",
-    "name": "Chemin de table étoiles et flocons argenté 275 x 28 cm",
+    "name": "Chemin de table de Noël brodé (Khevga)",
     "rayon": "Table de Noël",
-    "url": "https://www.amazon.fr/dp/B0FP8X9XBB",
+    "url": "https://www.amazon.fr/dp/B01LWVFV6F",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "Argent et flocons pour une table givrée."
+    "benefice": "Broderie fine et lavable, pour une table chic et sobre."
   },
   {
     "id": "P018",
-    "name": "Centre de table enneigé, 3 bougeoirs, pommes de pin et baies (COSTWAY)",
+    "name": "Lot de 3 bougeoirs en verre avec baies rouges (Hewory)",
     "rayon": "Table de Noël",
-    "url": "https://www.amazon.fr/dp/B0BKGKJNBF",
+    "url": "https://www.amazon.fr/dp/B0D99K94MP",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Coup de cœur",
-    "benefice": "Le centre de table complet : bougeoirs, pommes de pin et baies."
+    "gamme": "Milieu de gamme",
+    "benefice": "Un centre de table bas, prêt à poser : on se voit par-dessus."
   },
   {
     "id": "P019",
@@ -210,36 +210,36 @@
   },
   {
     "id": "P020",
-    "name": "Lot de 12 bougies LED chauffe-plat avec télécommande (Mepham)",
+    "name": "Lot de 24 bougies LED chauffe-plat, minuterie et télécommande (cimetech)",
     "rayon": "Table de Noël",
-    "url": "https://www.amazon.fr/dp/B0H7MJ7BH5",
+    "url": "https://www.amazon.fr/dp/B0D47DZ4HT",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "La lumière des bougies, sans flamme au milieu des serviettes."
+    "benefice": "La lumière des bougies sans flamme, et elles s'allument seules."
   },
   {
     "id": "P021",
-    "name": "Grande couronne de porte artificielle 45 cm, baies et pommes de pin",
+    "name": "Couronne de porte tressée « Welcome » (COM-FOUR)",
     "rayon": "Déco extérieure",
-    "url": "https://www.amazon.fr/dp/B0DF3671CL",
+    "url": "https://www.amazon.fr/dp/B09C88126P",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
-    "benefice": "45 cm bien fournis : la porte se voit de la rue."
+    "gamme": "Petit prix",
+    "benefice": "Une entrée accueillante en deux secondes, accrochée à la porte."
   },
   {
     "id": "P022",
-    "name": "Couronne de porte enneigée, branches givrées et pommes de pin",
+    "name": "Couronne de Noël lumineuse 61 cm, pommes de pin et baies",
     "rayon": "Déco extérieure",
-    "url": "https://www.amazon.fr/dp/B0FLY6HZCZ",
+    "url": "https://www.amazon.fr/dp/B0D87H1H9C",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
-    "benefice": "Branches givrées pour une entrée « winter wonderland »."
+    "gamme": "Coup de cœur",
+    "benefice": "Déjà éclairée : la porte se voit de la rue, de jour comme de nuit."
   },
   {
     "id": "P023",
@@ -265,31 +265,31 @@
   },
   {
     "id": "P025",
-    "name": "Lot de 4 lanternes de Noël LED blanc chaud",
+    "name": "Lot de 10 mini lanternes LED dorées, piles incluses (Romadedi)",
     "rayon": "Déco extérieure",
-    "url": "https://www.amazon.fr/dp/B0FLK5TQ9S",
+    "url": "https://www.amazon.fr/dp/B0BCFG2B3F",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Petit prix",
-    "benefice": "Quatre lanternes pour encadrer la porte ou les marches."
+    "benefice": "Dix petites lumières pour les marches, le rebord ou la table."
   },
   {
     "id": "P026",
-    "name": "Sapin floqué 210 cm avec neige épaisse et LED intégrées (Yorbay)",
+    "name": "Sapin de Noël floqué 180 cm avec neige (COSTWAY)",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B0915NX337",
+    "url": "https://www.amazon.fr/dp/B08P1XPKFZ",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Coup de cœur",
-    "benefice": "Neige épaisse et lumières déjà posées : l'effet winter wonderland sans effort."
+    "benefice": "Branches enneigées : l'effet winter wonderland sans effort."
   },
   {
     "id": "P027",
-    "name": "Sapin artificiel 180 cm touffu et réaliste (YEAUPE PRO)",
+    "name": "Sapin artificiel 180 cm touffu et réaliste, vert forêt (YEAUPE PRO)",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B0GY13PP2W",
+    "url": "https://www.amazon.fr/dp/B0GXZW2ZRB",
     "price": null,
     "image": null,
     "status": "Validé",
@@ -375,14 +375,14 @@
   },
   {
     "id": "P035",
-    "name": "Lot de 3 maisons en céramique blanche à LED (Romadedi)",
+    "name": "Photophore de Noël décoratif (COM-FOUR)",
     "rayon": "Villages & figurines",
-    "url": "https://www.amazon.fr/dp/B0FJRKL1HB",
+    "url": "https://www.amazon.fr/dp/B0976YWB3V",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
-    "benefice": "Céramique blanche : parfait pour un Noël givré ou nordique."
+    "gamme": "Petit prix",
+    "benefice": "Une bougie LED dedans, et la table s'illumine doucement."
   },
   {
     "id": "P036",

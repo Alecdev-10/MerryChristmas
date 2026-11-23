@@ -18,8 +18,8 @@ export default function APropos() {
       </p>
       <h2>Comment nous choisissons</h2>
       <p>
-        Chaque produit est retenu pour sa note client (4,3 sur 5 ou plus), son nombre d&apos;avis et sa livraison
-        avant le 24 décembre. Nous proposons trois gammes de prix dans chaque rayon, pour que chacun trouve son
+        Chaque produit est retenu pour sa note client, son nombre d&apos;avis et sa disponibilité sur Amazon.fr.
+        Nous retirons ceux qui baissent ou ne sont plus en stock. Nous proposons trois gammes de prix dans chaque rayon, pour que chacun trouve son
         compte.
       </p>
       <h2>Comment fonctionne la boutique</h2>
