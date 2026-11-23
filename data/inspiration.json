@@ -1,0 +1,1138 @@
+{
+ "etapes": [
+  {
+   "id": "etapes-comment-decorer-son-sapin",
+   "titre": "Décorer son sapin en 5 étapes",
+   "texte": "Commencez toujours par gonfler les branches une à une, de bas en haut : vingt minutes qui changent tout. Posez ensuite la guirlande, environ 100 LED par tranche de 30 cm, en partant du cœur de chaque branche vers l'extérieur.",
+   "etapes": [
+    "Gonfler chaque branche",
+    "La lumière d'abord",
+    "Ruban en vagues larges",
+    "Grosses boules près du tronc",
+    "Cimier puis jupe"
+   ],
+   "papier": "#16352f",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-comment-decorer-un-sapin-blanc",
+   "titre": "Sapin blanc : 5 étapes",
+   "texte": "Sur un sapin blanc ou floqué, misez sur l'or, le champagne et l'argent : le rouge vif durcit vite l'ensemble. Gardez une lumière blanc chaud pour éviter l'effet bleuté en photo, et ajoutez des boules en verre qui accrochent les reflets.",
+   "etapes": [
+    "Gonfler les branches floquées",
+    "Lumière blanc chaud",
+    "Ruban champagne en vagues",
+    "Boules or et argent",
+    "Étoile dorée au sommet"
+   ],
+   "papier": "#bcd3db",
+   "encre": "#7a1222",
+   "accent": "#16352f",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-deco-sapin-etape-par-etape",
+   "titre": "L'ordre qui change tout",
+   "texte": "L'ordre compte plus que les décorations : branches, lumière, ruban, boules, puis cimier. Placez les plus grosses boules à l'intérieur pour donner de la profondeur, et gardez les petites pour combler les trous au bout des branches.",
+   "etapes": [
+    "Choisir trois couleurs",
+    "Ouvrir les branches une à une",
+    "Guirlande du cœur au bout",
+    "Boules du tronc vers le bord",
+    "Reculer et combler les trous"
+   ],
+   "papier": "#4a0d16",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-tuto-sapin-de-noel",
+   "titre": "Un sapin qui a l'air cher",
+   "texte": "Un sapin qui a l'air cher tient à deux détails : beaucoup de lumière chaude et deux ou trois couleurs seulement. Mélangez les finitions mates, brillantes et pailletées dans la même teinte pour un rendu riche sans surcharger.",
+   "etapes": [
+    "Une palette de deux couleurs",
+    "600 LED pour 180 cm",
+    "Mélanger mat et brillant",
+    "Glisser des branches de pin",
+    "Panier ou caisse au pied"
+   ],
+   "papier": "#f2b544",
+   "encre": "#7a1222",
+   "accent": "#1e4c4a",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-champagne-et-or",
+   "titre": "Sapin champagne et or",
+   "texte": "Pour un sapin champagne et or, associez des boules mates champagne, de l'or brillant et quelques touches crème. Un ruban en velours posé en vagues larges relie le tout, et une jupe crème au pied termine l'effet glamour.",
+   "etapes": [
+    "Gonfler chaque branche",
+    "Lumière blanc chaud",
+    "Ruban velours champagne",
+    "Boules or, champagne, crème",
+    "Étoile dorée, jupe crème"
+   ],
+   "papier": "#efe6d6",
+   "encre": "#4a0d16",
+   "accent": "#b38a4d",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-rouge-et-or",
+   "titre": "Sapin rouge et or réussi",
+   "texte": "Le rouge et or reste la palette la plus chaleureuse. Pour éviter l'effet chargé, gardez l'or pour les grosses boules au cœur du sapin et le rouge pour les petites au bord, puis cachez le pied dans un panier en osier.",
+   "etapes": [
+    "Gonfler chaque branche",
+    "Guirlande blanc chaud",
+    "Ruban rouge en vagues",
+    "Boules or près du tronc",
+    "Cimier doré, panier au pied"
+   ],
+   "papier": "#4a0d16",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-floque-deco",
+   "titre": "Sapin floqué, effet neige",
+   "texte": "Le sapin floqué demande beaucoup de lumière : prévoyez un peu plus de LED que pour un sapin vert, car le blanc les absorbe. Ajoutez des boules en verre et argent, puis un tapis de neige artificielle au pied pour l'effet winter wonderland.",
+   "etapes": [
+    "Secouer le flocage en trop",
+    "Lumière chaude, très dense",
+    "Ruban blanc ou argent",
+    "Boules verre et argent",
+    "Neige au pied du sapin"
+   ],
+   "papier": "#bcd3db",
+   "encre": "#7a1222",
+   "accent": "#16352f",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-de-noel-scandinave",
+   "titre": "Sapin scandinave en 5 étapes",
+   "texte": "Le sapin scandinave mise sur la retenue : peu de décorations, mais bien choisies. Privilégiez le bois clair, la paille, la laine et le blanc, laissez respirer les branches et remplacez la jupe par une caisse en bois.",
+   "etapes": [
+    "Choisir un sapin fin",
+    "Peu de lumière, bien répartie",
+    "Rubans en laine ou lin",
+    "Bois, paille et blanc",
+    "Caisse en bois au pied"
+   ],
+   "papier": "#efe6d6",
+   "encre": "#4a0d16",
+   "accent": "#b38a4d",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-decorer-un-petit-sapin",
+   "titre": "Petit sapin, grand effet",
+   "texte": "Un petit sapin gagne à être surélevé sur un tabouret ou une caisse. Utilisez des boules de 3 à 4 cm et un fil cuivre à micro-LED : les grosses décorations l'écrasent, alors que les petites le rendent généreux.",
+   "etapes": [
+    "Surélever le petit sapin",
+    "Fil cuivre micro-LED",
+    "Ruban fin en spirale",
+    "Petites boules de 3 cm",
+    "Étoile légère au sommet"
+   ],
+   "papier": "#e8b4a6",
+   "encre": "#4a0d16",
+   "accent": "#1e4c4a",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-blanc-et-dore",
+   "titre": "Sapin blanc et doré",
+   "texte": "Le blanc et doré fonctionne mieux avec deux finitions d'or : mate pour le fond, brillante pour les reflets. Gardez une seule couleur de lumière, blanc chaud, et répétez le doré sur la table et la cheminée pour un salon cohérent.",
+   "etapes": [
+    "Gonfler les branches",
+    "Lumière blanc chaud dense",
+    "Ruban doré en vagues",
+    "Boules or mates et brillantes",
+    "Étoile dorée, jupe blanche"
+   ],
+   "papier": "#efe6d6",
+   "encre": "#4a0d16",
+   "accent": "#b38a4d",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-sapin-de-noel-nature",
+   "titre": "Sapin nature en 5 étapes",
+   "texte": "Pour un sapin nature, remplacez une partie des boules par des pommes de pin, des tranches d'orange séchées et des étoiles en bois. Un ruban en lin et un panier en osier au pied complètent l'ensemble sans plastique visible.",
+   "etapes": [
+    "Gonfler chaque branche",
+    "Guirlande blanc chaud",
+    "Ruban en lin naturel",
+    "Pommes de pin et bois",
+    "Panier en osier au pied"
+   ],
+   "papier": "#16352f",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "etapes-idee-deco-sapin",
+   "titre": "La méthode des décorateurs",
+   "texte": "Les décorateurs travaillent en couches : la lumière d'abord, puis le ruban, puis les boules des plus grosses aux plus petites. Reculez de trois pas après chaque couche pour repérer les trous, c'est là que se joue le rendu final.",
+   "etapes": [
+    "Travailler par couches",
+    "Lumière, puis ruban",
+    "Boules, des grosses aux petites",
+    "Pics et branchages en relief",
+    "Recul de trois pas"
+   ],
+   "papier": "#14213d",
+   "encre": "#f3eef2",
+   "accent": "#d8b878",
+   "rayon": "sapins"
+  }
+ ],
+ "palettes": [
+  {
+   "id": "palette-noel-2026",
+   "titre": "Palette Noël 2026 : blanc et doré",
+   "texte": "Le blanc et doré reste la palette la plus enregistrée de la saison. Gardez le blanc crème pour les grandes surfaces et l'or pour les détails, puis ajoutez une touche de vert sauge avec des branches pour réchauffer l'ensemble.",
+   "couleurs": [
+    {
+     "hex": "#fbf7ee",
+     "nom": "Blanc crème"
+    },
+    {
+     "hex": "#f1e4c8",
+     "nom": "Champagne"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or doux"
+    },
+    {
+     "hex": "#b38a4d",
+     "nom": "Laiton"
+    },
+    {
+     "hex": "#9aa58c",
+     "nom": "Vert sauge"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "palette-couleurs-deco-noel",
+   "titre": "Champagne et or",
+   "texte": "Le champagne et or donne un Noël glamour sans clinquant. Associez des boules mates champagne à quelques touches d'or brillant, et ajoutez un bordeaux très sombre en petite quantité pour donner de la profondeur au sapin.",
+   "couleurs": [
+    {
+     "hex": "#fbf7ee",
+     "nom": "Ivoire"
+    },
+    {
+     "hex": "#f1e4c8",
+     "nom": "Champagne"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or"
+    },
+    {
+     "hex": "#8a6a3a",
+     "nom": "Bronze"
+    },
+    {
+     "hex": "#2a070d",
+     "nom": "Bordeaux noir"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "palette-noel-blanc-et-dore-idees",
+   "titre": "Noël blanc et doré",
+   "texte": "Pour un Noël blanc et doré qui ne paraît pas froid, mélangez plusieurs blancs : pur, lin et crème. L'or pâle sur les grandes boules et l'or vif sur les petites créent du relief, et le taupe sert d'ombre discrète.",
+   "couleurs": [
+    {
+     "hex": "#ffffff",
+     "nom": "Blanc pur"
+    },
+    {
+     "hex": "#efe6d6",
+     "nom": "Lin"
+    },
+    {
+     "hex": "#e2c58f",
+     "nom": "Or pâle"
+    },
+    {
+     "hex": "#c49a50",
+     "nom": "Or vif"
+    },
+    {
+     "hex": "#7d6a55",
+     "nom": "Taupe"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "palette-rouge-et-vert-noel",
+   "titre": "Rouge et vert, version chic",
+   "texte": "Le rouge et vert devient élégant quand on fonce les teintes : rouge baie et bordeaux plutôt que rouge vif, vert sapin plutôt que vert pomme. Ajoutez du bois clair et du blanc neige pour aérer la palette.",
+   "couleurs": [
+    {
+     "hex": "#9c1b26",
+     "nom": "Rouge baie"
+    },
+    {
+     "hex": "#4a0d16",
+     "nom": "Bordeaux"
+    },
+    {
+     "hex": "#1e4c4a",
+     "nom": "Vert sapin"
+    },
+    {
+     "hex": "#c9a27e",
+     "nom": "Bois clair"
+    },
+    {
+     "hex": "#f3eef2",
+     "nom": "Neige"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "palette-noel-givre-deco",
+   "titre": "La palette du Noël givré",
+   "texte": "Le Noël givré repose sur le blanc, l'argent et un bleu glacier très doux. Une pointe d'or, juste sur le cimier ou les bougies, évite l'effet trop froid, et le verre transparent multiplie les reflets de la guirlande.",
+   "couleurs": [
+    {
+     "hex": "#ffffff",
+     "nom": "Neige"
+    },
+    {
+     "hex": "#dfe7ec",
+     "nom": "Givre"
+    },
+    {
+     "hex": "#a9b6c0",
+     "nom": "Argent"
+    },
+    {
+     "hex": "#6f7f8c",
+     "nom": "Ardoise"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Pointe d'or"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "palette-deco-noel-bordeaux",
+   "titre": "Bordeaux et cuivre",
+   "texte": "Le bordeaux et cuivre est plus moderne que le rouge classique et superbe à la lumière des bougies. Utilisez le velours pour les rubans, le cuivre pour les petites boules et un vert profond pour relier le tout au sapin.",
+   "couleurs": [
+    {
+     "hex": "#2a070d",
+     "nom": "Bordeaux noir"
+    },
+    {
+     "hex": "#7a1222",
+     "nom": "Bordeaux"
+    },
+    {
+     "hex": "#b8733f",
+     "nom": "Cuivre"
+    },
+    {
+     "hex": "#e8c9a6",
+     "nom": "Sable"
+    },
+    {
+     "hex": "#1e4c4a",
+     "nom": "Vert profond"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "palette-deco-noel-vert-sauge",
+   "titre": "Vert sauge et crème",
+   "texte": "Le vert sauge apporte une douceur naturelle très recherchée cette année. Associez-le au crème et au lin pour les textiles, puis au laiton pour les bougeoirs : la palette fonctionne aussi bien sur un sapin que sur une table.",
+   "couleurs": [
+    {
+     "hex": "#9aa58c",
+     "nom": "Vert sauge"
+    },
+    {
+     "hex": "#6b7a5e",
+     "nom": "Olive"
+    },
+    {
+     "hex": "#efe6d6",
+     "nom": "Crème"
+    },
+    {
+     "hex": "#d8c3a5",
+     "nom": "Lin"
+    },
+    {
+     "hex": "#b38a4d",
+     "nom": "Laiton"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "palette-noel-bleu-nuit-et-or",
+   "titre": "Bleu nuit et or",
+   "texte": "Le Noël céleste associe un bleu nuit profond à l'or et au champagne, comme un ciel étoilé. Choisissez des boules étoilées, des lumières blanc chaud et quelques étoiles dorées suspendues à des hauteurs différentes.",
+   "couleurs": [
+    {
+     "hex": "#14213d",
+     "nom": "Bleu nuit"
+    },
+    {
+     "hex": "#26375e",
+     "nom": "Indigo"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or"
+    },
+    {
+     "hex": "#f1e4c8",
+     "nom": "Champagne"
+    },
+    {
+     "hex": "#f3eef2",
+     "nom": "Étoile"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "palette-couleurs-table-de-noel",
+   "titre": "La palette de la table",
+   "texte": "Pour une table de Noël chic, reprenez les couleurs du sapin. Une nappe blanche, un chemin doré et quelques baies rouges suffisent, et le vert sapin arrive naturellement avec les branches posées au centre.",
+   "couleurs": [
+    {
+     "hex": "#ffffff",
+     "nom": "Nappe blanche"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or"
+    },
+    {
+     "hex": "#9c1b26",
+     "nom": "Rouge baie"
+    },
+    {
+     "hex": "#1e4c4a",
+     "nom": "Vert sapin"
+    },
+    {
+     "hex": "#c9a27e",
+     "nom": "Bois"
+    }
+   ],
+   "rayon": "table-de-noel"
+  },
+  {
+   "id": "palette-deco-noel-salon",
+   "titre": "5 couleurs qui vont ensemble",
+   "texte": "Dans un salon, une palette réussie tient en trois couleurs principales et deux couleurs d'appui. Répétez chacune au moins trois fois dans la pièce, par exemple sur le sapin, les coussins et la cheminée, pour que l'œil fasse le lien.",
+   "couleurs": [
+    {
+     "hex": "#7a1222",
+     "nom": "Bordeaux"
+    },
+    {
+     "hex": "#f2b544",
+     "nom": "Lampion"
+    },
+    {
+     "hex": "#1e4c4a",
+     "nom": "Vert sapin"
+    },
+    {
+     "hex": "#efe6d6",
+     "nom": "Crème"
+    },
+    {
+     "hex": "#5a3520",
+     "nom": "Noyer"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "palette-noel-rose-poudre-deco",
+   "titre": "Rose poudré et or",
+   "texte": "Le rose poudré associé à l'or donne un Noël tendre et lumineux. Gardez le vieux rose pour les grosses boules, l'ivoire pour le ruban et l'or doux pour le cimier, avec une lumière blanc chaud pour rester chaleureux.",
+   "couleurs": [
+    {
+     "hex": "#f4d6cf",
+     "nom": "Rose poudré"
+    },
+    {
+     "hex": "#e8b4a6",
+     "nom": "Vieux rose"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or doux"
+    },
+    {
+     "hex": "#fbf7ee",
+     "nom": "Ivoire"
+    },
+    {
+     "hex": "#8c6b62",
+     "nom": "Mauve gris"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "palette-tendance-deco-noel-2026",
+   "titre": "La tendance glamour 2026",
+   "texte": "La tendance glamour de 2026 mélange champagne, or et ivoire avec une touche de noir velours. Le secret est la matière : verre, velours et paillettes dans la même couleur donnent un rendu riche sans multiplier les teintes.",
+   "couleurs": [
+    {
+     "hex": "#f1e4c8",
+     "nom": "Champagne"
+    },
+    {
+     "hex": "#d8b878",
+     "nom": "Or"
+    },
+    {
+     "hex": "#fbf7ee",
+     "nom": "Ivoire"
+    },
+    {
+     "hex": "#a9b6c0",
+     "nom": "Argent doux"
+    },
+    {
+     "hex": "#2a070d",
+     "nom": "Noir velours"
+    }
+   ],
+   "rayon": "sapins"
+  }
+ ],
+ "erreurs": [
+  {
+   "id": "erreurs-deco-noel",
+   "titre": "7 erreurs de déco de Noël",
+   "texte": "La plus fréquente : éparpiller la décoration partout. Regroupez plutôt en trois zones fortes, le sapin, la cheminée et la table. Éteignez aussi le plafonnier le soir : guirlandes, lampes et bougies suffisent à créer l'ambiance.",
+   "erreurs": [
+    "Déco éparpillée partout",
+    "Aucune couleur répétée",
+    "Plafonnier allumé le soir",
+    "Cheminée oubliée",
+    "Trop de petits objets",
+    "Fils électriques visibles",
+    "Aucune odeur de Noël"
+   ],
+   "papier": "#4a0d16",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-deco-sapin",
+   "titre": "7 erreurs qui gâchent un sapin",
+   "texte": "Première erreur : trop peu de lumière. Comptez environ 100 LED par tranche de 30 cm de sapin. Deuxième : des boules toutes de la même taille, qui aplatissent l'ensemble. Mélangez trois tailles et glissez les grosses vers le tronc.",
+   "erreurs": [
+    "Pas assez de lumière",
+    "Le blanc froid",
+    "Trop de couleurs",
+    "Boules toutes de même taille",
+    "Boules seulement au bord",
+    "Le pied visible",
+    "Branches pas gonflées"
+   ],
+   "papier": "#16352f",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-deco-noel-reussie",
+   "titre": "Les 7 erreurs à éviter",
+   "texte": "Une déco de Noël réussie répète les mêmes couleurs dans toute la pièce. Si votre sapin est blanc et doré, reprenez ces teintes sur les coussins et la cheminée. Et éloignez le sapin du mur pour qu'il respire et prenne la lumière.",
+   "erreurs": [
+    "Sapin collé au mur",
+    "Rien à hauteur des yeux",
+    "Coussins de l'été restés",
+    "Aucune lumière basse",
+    "Décor sans fil conducteur",
+    "Plaid oublié sur le canapé",
+    "Fenêtres laissées nues"
+   ],
+   "papier": "#14213d",
+   "encre": "#f3eef2",
+   "accent": "#d8b878",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-astuces-deco-noel-salon",
+   "titre": "7 erreurs à corriger vite",
+   "texte": "Bonne nouvelle : la plupart des erreurs se corrigent en dix minutes. Cachez les fils derrière les meubles avec des attaches transparentes, retirez la moitié des petits objets et regroupez le reste sur un plateau ou une étagère.",
+   "erreurs": [
+    "Garder tous les vieux objets",
+    "Ne pas trier avant",
+    "Acheter sans palette",
+    "Oublier les textiles",
+    "Décorer la veille de Noël",
+    "Négliger l'entrée",
+    "Pas de plateau pour regrouper"
+   ],
+   "papier": "#f2b544",
+   "encre": "#7a1222",
+   "accent": "#1e4c4a",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-table-de-noel",
+   "titre": "Table de Noël : 7 erreurs",
+   "texte": "L'erreur la plus courante : un centre de table trop haut qui empêche les invités de se voir. Restez sous 30 cm. Évitez aussi les vraies bougies près des serviettes en papier et des branches : les bougies LED donnent la même lumière.",
+   "erreurs": [
+    "Centre de table trop haut",
+    "Vraies bougies près du papier",
+    "Couleurs sans lien au sapin",
+    "Nappe sans chemin de table",
+    "Assiettes trop serrées",
+    "Aucun détail à chaque place",
+    "Lumière trop forte"
+   ],
+   "papier": "#e8b4a6",
+   "encre": "#4a0d16",
+   "accent": "#1e4c4a",
+   "rayon": "table-de-noel"
+  },
+  {
+   "id": "erreurs-deco-noel-exterieur",
+   "titre": "Déco extérieure : 7 erreurs",
+   "texte": "Dehors, la première règle est l'étanchéité : IP44 au minimum pour une guirlande exposée à la pluie. Choisissez aussi une seule couleur de lumière pour toute la façade, et un minuteur pour que tout s'allume seul chaque soir.",
+   "erreurs": [
+    "Guirlande non étanche",
+    "Couleurs de lumière mélangées",
+    "Rallonge non protégée",
+    "Porte d'entrée oubliée",
+    "Dix petits objets éparpillés",
+    "Solaire en plein décembre",
+    "Pas de minuteur"
+   ],
+   "papier": "#bcd3db",
+   "encre": "#7a1222",
+   "accent": "#16352f",
+   "rayon": "exterieur"
+  },
+  {
+   "id": "erreurs-guirlande-sapin",
+   "titre": "7 erreurs d'éclairage",
+   "texte": "La guirlande enroulée en spirale autour du sapin est l'erreur la plus visible. Faites plutôt des allers-retours du cœur vers le bout de chaque branche : la lumière vient de l'intérieur et le sapin paraît plus profond.",
+   "erreurs": [
+    "Guirlande trop courte",
+    "Spirale autour du sapin",
+    "Clignotement trop rapide",
+    "Fils qui pendent",
+    "LED bleutées",
+    "Une seule source de lumière",
+    "Prise inaccessible"
+   ],
+   "papier": "#14213d",
+   "encre": "#f3eef2",
+   "accent": "#d8b878",
+   "rayon": "guirlandes"
+  },
+  {
+   "id": "erreurs-comment-rater-son-sapin",
+   "titre": "Les erreurs de tout le monde",
+   "texte": "Presque tout le monde oublie de gonfler les branches d'un sapin artificiel. C'est pourtant ce qui fait la différence entre un sapin plat et un sapin fourni. Prenez vingt minutes, branche par branche, avant de poser quoi que ce soit.",
+   "erreurs": [
+    "Branches pas gonflées",
+    "Cimier trop lourd",
+    "Guirlande posée en dernier",
+    "Tout acheté le même jour",
+    "Sapin trop grand pour la pièce",
+    "Jupe oubliée",
+    "Décorations mal accrochées"
+   ],
+   "papier": "#4a0d16",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-deco-noel-ratee",
+   "titre": "Évitez ces 7 erreurs",
+   "texte": "Un salon de Noël paraît raté quand rien ne se répond. Choisissez trois couleurs et tenez-vous-y du sapin à la cheminée. Ajoutez des sources de lumière basses, lampes et bougies LED, plutôt qu'un plafonnier trop fort.",
+   "erreurs": [
+    "Mélanger tous les styles",
+    "Imiter un catalogue",
+    "Oublier sa déco habituelle",
+    "Trop de rouge vif",
+    "Pas de matière naturelle",
+    "Aucune bougie",
+    "Rien sur les murs"
+   ],
+   "papier": "#efe6d6",
+   "encre": "#4a0d16",
+   "accent": "#b38a4d",
+   "rayon": "sapins"
+  },
+  {
+   "id": "erreurs-lumieres-de-noel",
+   "titre": "Lumières : 7 erreurs",
+   "texte": "Le blanc froid est l'erreur qui se voit le plus en photo : il rend la pièce bleutée. Choisissez du blanc chaud, autour de 2700 K, et multipliez les petites sources de lumière plutôt qu'une seule grosse guirlande.",
+   "erreurs": [
+    "Le blanc froid",
+    "Plafonnier trop fort",
+    "Lampes éteintes",
+    "Pas de bougies LED",
+    "Guirlande sans minuteur",
+    "Ombres trop dures",
+    "Lumière seulement au sapin"
+   ],
+   "papier": "#16352f",
+   "encre": "#f3eef2",
+   "accent": "#f2b544",
+   "rayon": "guirlandes"
+  },
+  {
+   "id": "erreurs-deco-table-reveillon",
+   "titre": "Réveillon : 7 détails",
+   "texte": "Une belle table de réveillon se construit en trois couches : la nappe ou le chemin, le centre, puis un petit détail à chaque place. Laissez au moins 60 cm par convive pour que les assiettes et les verres respirent.",
+   "erreurs": [
+    "Serviettes en papier fin",
+    "Verres dépareillés",
+    "Pas de marque-place",
+    "Chemin trop court",
+    "Musique oubliée",
+    "Table montée au dernier moment",
+    "Aucun vert sur la table"
+   ],
+   "papier": "#f2b544",
+   "encre": "#7a1222",
+   "accent": "#1e4c4a",
+   "rayon": "table-de-noel"
+  },
+  {
+   "id": "erreurs-sapin-floque",
+   "titre": "Sapin floqué : 7 erreurs",
+   "texte": "Le sapin floqué absorbe la lumière : prévoyez plus de LED que pour un sapin vert. Évitez le tout-blanc qui efface les boules, et préférez l'or, le champagne ou l'argent avec du verre qui accroche les reflets.",
+   "erreurs": [
+    "Trop peu de lumière",
+    "Rouge vif partout",
+    "Flocage non secoué",
+    "Boules toutes blanches",
+    "Pas de reflets",
+    "Pied laissé nu",
+    "Le blanc froid"
+   ],
+   "papier": "#bcd3db",
+   "encre": "#7a1222",
+   "accent": "#16352f",
+   "rayon": "sapins"
+  }
+ ],
+ "styles": [
+  {
+   "id": "style-deco-noel-scandinave",
+   "titre": "Noël scandinave : l'inspiration",
+   "texte": "Le Noël scandinave se reconnaît à sa retenue : bois clair, lin, laine et beaucoup de blanc. Une seule guirlande bien posée, quelques étoiles en papier à la fenêtre et des bougies sur l'étagère suffisent à créer l'ambiance.",
+   "vignettes": [
+    {
+     "kind": "sapin",
+     "label": "Le sapin fin",
+     "fond": "#efe6d6",
+     "encre": "#3a2a1e"
+    },
+    {
+     "kind": "bougies",
+     "label": "Bougies blanches",
+     "fond": "#d8c3a5",
+     "encre": "#3a2a1e"
+    },
+    {
+     "kind": "cimier",
+     "label": "Étoiles en papier",
+     "fond": "#9aa58c",
+     "encre": "#3a2a1e"
+    },
+    {
+     "kind": "figurine",
+     "label": "Petit lutin en bois",
+     "fond": "#f7f3ec",
+     "encre": "#3a2a1e"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-noel-chic-blanc-et-dore",
+   "titre": "Chic, blanc et doré",
+   "texte": "Pour un Noël chic, faites circuler le blanc et le doré dans toute la maison : le sapin, la table, la fenêtre et une étagère. Variez les matières, verre, velours et lin, pour que la palette reste riche malgré deux couleurs seulement.",
+   "vignettes": [
+    {
+     "kind": "boules",
+     "label": "Boules or mat",
+     "fond": "#fbf7ee",
+     "encre": "#7d5a24"
+    },
+    {
+     "kind": "chemin",
+     "label": "Chemin doré",
+     "fond": "#f1e4c8",
+     "encre": "#7d5a24"
+    },
+    {
+     "kind": "cimier",
+     "label": "Étoile dorée",
+     "fond": "#e2c58f",
+     "encre": "#7d5a24"
+    },
+    {
+     "kind": "bougies",
+     "label": "Bougeoirs laiton",
+     "fond": "#ffffff",
+     "encre": "#7d5a24"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "style-deco-noel-chalet",
+   "titre": "L'esprit chalet à la maison",
+   "texte": "L'esprit chalet repose sur le rouge, le vert sapin et le bois brut. Ajoutez du tissu écossais sur la table, des casse-noisettes sur l'étagère et une lumière très chaude à la fenêtre pour retrouver l'ambiance montagne.",
+   "vignettes": [
+    {
+     "kind": "couronne",
+     "label": "Couronne en bois",
+     "fond": "#7a1222",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "lanterne",
+     "label": "Lanterne au sol",
+     "fond": "#1e4c4a",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "figurine",
+     "label": "Casse-noisette",
+     "fond": "#c9a27e",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "sapin",
+     "label": "Sapin écossais",
+     "fond": "#4a0d16",
+     "encre": "#f3eef2"
+    }
+   ],
+   "rayon": "figurines"
+  },
+  {
+   "id": "style-winter-wonderland-deco",
+   "titre": "L'ambiance winter wonderland",
+   "texte": "Le winter wonderland mise sur le blanc, l'argent et le verre. Un sapin floqué, de la neige artificielle au pied, un village lumineux sur l'étagère et des flocons à la fenêtre créent un décor de conte d'hiver.",
+   "vignettes": [
+    {
+     "kind": "sapin",
+     "label": "Sapin floqué",
+     "fond": "#dfe7ec",
+     "encre": "#2c3e4c"
+    },
+    {
+     "kind": "village",
+     "label": "Village enneigé",
+     "fond": "#ffffff",
+     "encre": "#2c3e4c"
+    },
+    {
+     "kind": "rideau",
+     "label": "Flocons à la fenêtre",
+     "fond": "#bcd3db",
+     "encre": "#2c3e4c"
+    },
+    {
+     "kind": "boules",
+     "label": "Boules en verre",
+     "fond": "#a9b6c0",
+     "encre": "#2c3e4c"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-noel-glam-champagne",
+   "titre": "Le Noël glam champagne",
+   "texte": "Le style glam associe le champagne et l'or à un fond sombre, bordeaux ou noir velours. Les reflets font tout : boules en verre, bougeoirs dorés et guirlandes très denses pour que chaque coin de la pièce brille.",
+   "vignettes": [
+    {
+     "kind": "boules",
+     "label": "Boules champagne",
+     "fond": "#2a070d",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "bougies",
+     "label": "Bougies dorées",
+     "fond": "#f1e4c8",
+     "encre": "#2a070d"
+    },
+    {
+     "kind": "guirlande",
+     "label": "Guirlande dense",
+     "fond": "#4a0d16",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "cimier",
+     "label": "Cimier brillant",
+     "fond": "#d8b878",
+     "encre": "#2a070d"
+    }
+   ],
+   "rayon": "boules"
+  },
+  {
+   "id": "style-deco-noel-boheme",
+   "titre": "Le Noël bohème",
+   "texte": "Le Noël bohème mélange les matières naturelles : macramé, herbes séchées, terre cuite et lin. Les couleurs restent chaudes, terracotta, sable et vert sauge, avec une lumière douce de bougies et de guirlandes fines.",
+   "vignettes": [
+    {
+     "kind": "couronne",
+     "label": "Couronne séchée",
+     "fond": "#e8c9a6",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "lanterne",
+     "label": "Lanterne en rotin",
+     "fond": "#b8733f",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "guirlande",
+     "label": "Fil cuivre",
+     "fond": "#efe6d6",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "centre",
+     "label": "Herbes et bougies",
+     "fond": "#9aa58c",
+     "encre": "#3a1a10"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-noel-opera-velours-rouge",
+   "titre": "Le Noël opéra",
+   "texte": "Le style opéra joue la grande scène : velours rouge profond, or et bougies. Drapez un ruban de velours sur la cheminée, choisissez des boules bordeaux et dorées, et baissez la lumière pour laisser briller les bougies.",
+   "vignettes": [
+    {
+     "kind": "rideau",
+     "label": "Rideau de velours",
+     "fond": "#4a0d16",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "bougies",
+     "label": "Candélabre",
+     "fond": "#7a1222",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "boules",
+     "label": "Boules bordeaux",
+     "fond": "#2a070d",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "figurine",
+     "label": "Le soldat",
+     "fond": "#5a1a26",
+     "encre": "#f3eef2"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-noel-celeste-deco",
+   "titre": "Le Noël céleste",
+   "texte": "Le Noël céleste transforme la maison en ciel étoilé : bleu nuit, or et étoiles suspendues à différentes hauteurs. Une guirlande à micro-LED dans un bocal ou sur une branche rappelle les constellations.",
+   "vignettes": [
+    {
+     "kind": "cimier",
+     "label": "Étoiles suspendues",
+     "fond": "#14213d",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "guirlande",
+     "label": "Constellation LED",
+     "fond": "#26375e",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "lanterne",
+     "label": "Lanterne bleue",
+     "fond": "#1b2a4a",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "boules",
+     "label": "Boules étoilées",
+     "fond": "#33466e",
+     "encre": "#f3eef2"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-inspiration-deco-noel",
+   "titre": "Trouvez votre style de Noël",
+   "texte": "Pour trouver votre style, partez de votre salon tel qu'il est : bois clair, plutôt scandinave ; tons chauds et velours, plutôt opéra ou glam. Le style de Noël le plus réussi prolonge votre déco de tous les jours.",
+   "vignettes": [
+    {
+     "kind": "sapin",
+     "label": "Le sapin",
+     "fond": "#efe6d6",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "centre",
+     "label": "La table",
+     "fond": "#4a0d16",
+     "encre": "#f3eef2"
+    },
+    {
+     "kind": "couronne",
+     "label": "La porte",
+     "fond": "#bcd3db",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "village",
+     "label": "La cheminée",
+     "fond": "#e8c9a6",
+     "encre": "#3a1a10"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-deco-noel-nordique",
+   "titre": "Un Noël nordique lumineux",
+   "texte": "La déco nordique compte sur la lumière plus que sur les objets. Multipliez les petites sources, bougies LED, guirlandes fines et étoiles en papier éclairées, et gardez des matières simples comme le bois clair et la laine.",
+   "vignettes": [
+    {
+     "kind": "lanterne",
+     "label": "Lumière douce",
+     "fond": "#f7f3ec",
+     "encre": "#9c1b26"
+    },
+    {
+     "kind": "cimier",
+     "label": "Étoile en bois",
+     "fond": "#dfe7ec",
+     "encre": "#9c1b26"
+    },
+    {
+     "kind": "jupe",
+     "label": "Jupe en laine",
+     "fond": "#c9b79c",
+     "encre": "#9c1b26"
+    },
+    {
+     "kind": "bougies",
+     "label": "Trois bougies",
+     "fond": "#ffffff",
+     "encre": "#9c1b26"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-deco-noel-cosy",
+   "titre": "Un salon de Noël cosy",
+   "texte": "Un Noël cosy se construit avec des textiles et de la lumière basse : plaids en laine, coussins en velours, bougies et guirlandes chaudes. Évitez le plafonnier le soir et regroupez la déco autour du canapé et du sapin.",
+   "vignettes": [
+    {
+     "kind": "bougies",
+     "label": "Bougies partout",
+     "fond": "#5a3520",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "jupe",
+     "label": "Jupe en tricot",
+     "fond": "#c9a27e",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "guirlande",
+     "label": "Lumière basse",
+     "fond": "#7a1222",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "lanterne",
+     "label": "Coin lecture",
+     "fond": "#efe6d6",
+     "encre": "#3a1a10"
+    }
+   ],
+   "rayon": "sapins"
+  },
+  {
+   "id": "style-deco-noel-traditionnelle",
+   "titre": "Le Noël traditionnel",
+   "texte": "Le Noël traditionnel ne se démode pas : rouge, vert et or, couronne sur la porte, casse-noisettes et village lumineux. Pour le moderniser, foncez les teintes et choisissez des matières nobles comme le velours et le verre.",
+   "vignettes": [
+    {
+     "kind": "couronne",
+     "label": "Couronne de porte",
+     "fond": "#1e4c4a",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "figurine",
+     "label": "Casse-noisette",
+     "fond": "#9c1b26",
+     "encre": "#f2b544"
+    },
+    {
+     "kind": "village",
+     "label": "Village lumineux",
+     "fond": "#efe6d6",
+     "encre": "#3a1a10"
+    },
+    {
+     "kind": "guinguette",
+     "label": "Guirlande d'ampoules",
+     "fond": "#143533",
+     "encre": "#f2b544"
+    }
+   ],
+   "rayon": "figurines"
+  }
+ ]
+}
