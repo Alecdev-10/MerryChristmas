@@ -1,14 +1,14 @@
 [
   {
     "id": "P001",
-    "name": "Sapin artificiel premium 180 cm, support bois et sac de rangement (Pure Living)",
+    "name": "Sapin artificiel lumineux 150 cm en fibre optique (HOMCOM)",
     "rayon": "Sapins & pieds",
-    "url": "https://www.amazon.fr/dp/B07YFR5FJF",
+    "url": "https://www.amazon.fr/dp/B0BHHVD84S",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Coup de cœur",
-    "benefice": "Pointes très fournies et support en bois : il a l'air vrai même de près."
+    "gamme": "Milieu de gamme",
+    "benefice": "Fibre optique intégrée : le sapin s'allume tout seul, sans guirlande à poser."
   },
   {
     "id": "P002",
@@ -18,7 +18,7 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
+    "gamme": "Coup de cœur",
     "benefice": "580 branches pour un sapin dense et bien fourni."
   },
   {
@@ -51,19 +51,19 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Petit prix",
+    "gamme": "Milieu de gamme",
     "benefice": "Assez large pour un sapin de 180 cm et plus."
   },
   {
     "id": "P006",
-    "name": "Guirlande LED 10 m blanc chaud avec minuterie, IP44 (EMOS)",
+    "name": "Guirlande LED intérieur/extérieur, 8 modes avec mémoire (Luccika)",
     "rayon": "Guirlandes & lumières",
-    "url": "https://www.amazon.fr/dp/B07WDBYST3",
+    "url": "https://www.amazon.fr/dp/B09L9L754B",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Milieu de gamme",
-    "benefice": "Minuterie intégrée et IP44 : elle va dedans comme dehors."
+    "benefice": "Huit modes et mémoire du dernier réglage : dedans comme dehors."
   },
   {
     "id": "P007",
@@ -89,13 +89,13 @@
   },
   {
     "id": "P009",
-    "name": "Rideau lumineux 40 étoiles LED blanc chaud 1 x 1,2 m (Lights4fun)",
+    "name": "Rideau lumineux étoiles 2 m blanc chaud pour fenêtre (BLOOMWIN)",
     "rayon": "Guirlandes & lumières",
-    "url": "https://www.amazon.fr/dp/B009E2M5RQ",
+    "url": "https://www.amazon.fr/dp/B09YXHXPLG",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
+    "gamme": "Petit prix",
     "benefice": "Transforme une fenêtre nue en décor en deux minutes."
   },
   {
@@ -106,19 +106,19 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Petit prix",
+    "gamme": "Milieu de gamme",
     "benefice": "Des étoiles à hauteurs différentes : une fenêtre nue devient un décor."
   },
   {
     "id": "P011",
-    "name": "Lot de 120 boules de Noël incassables rouge et or (Joyblossom)",
+    "name": "Coffret de 77 boules de Noël traditionnelles (BRUBAKER)",
     "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B0D9JCV6BW",
+    "url": "https://www.amazon.fr/dp/B08K8THKWL",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Milieu de gamme",
-    "benefice": "120 boules incassables : de quoi remplir un grand sapin, même avec un chat."
+    "benefice": "77 pièces assorties : de quoi habiller tout un sapin d'un coup."
   },
   {
     "id": "P012",
@@ -133,25 +133,25 @@
   },
   {
     "id": "P013",
-    "name": "Lot de 35 boules rouge et or incassables, 4 cm (Valery Madelyn)",
+    "name": "Lot de 44 boules de Noël incassables",
     "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B0GTM26BSF",
-    "price": null,
-    "image": null,
-    "status": "Validé",
-    "gamme": "Petit prix",
-    "benefice": "Petites boules de 4 cm pour combler les vides."
-  },
-  {
-    "id": "P014",
-    "name": "Cimier étoile en verre argenté (Lights4fun)",
-    "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B0DB8SSX74",
+    "url": "https://www.amazon.fr/dp/B0CDGP5BKW",
     "price": null,
     "image": null,
     "status": "Validé",
     "gamme": "Milieu de gamme",
-    "benefice": "Verre argenté qui accroche la lumière de la guirlande."
+    "benefice": "Incassables : rassurant avec des enfants ou un chat."
+  },
+  {
+    "id": "P014",
+    "name": "Cimier de sapin en verre (UNOLIGA)",
+    "rayon": "Boules & suspensions",
+    "url": "https://www.amazon.fr/dp/B0HKYS5F7T",
+    "price": null,
+    "image": null,
+    "status": "Validé",
+    "gamme": "Petit prix",
+    "benefice": "Une pointe en verre qui accroche la lumière de la guirlande."
   },
   {
     "id": "P015",
@@ -194,19 +194,19 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
+    "gamme": "Petit prix",
     "benefice": "Un centre de table bas, prêt à poser : on se voit par-dessus."
   },
   {
     "id": "P019",
-    "name": "Centre de table 52 cm givré avec 3 bougeoirs (WeRChristmas)",
+    "name": "Lot de 6 photophores de Noël cylindriques en verre (Romadedi)",
     "rayon": "Table de Noël",
-    "url": "https://www.amazon.fr/dp/B00PEPNO3G",
+    "url": "https://www.amazon.fr/dp/B0CFL5HBDM",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
-    "benefice": "Givré, avec trois bougeoirs : la table est prête."
+    "gamme": "Petit prix",
+    "benefice": "Six photophores alignés : un centre de table lumineux en un geste."
   },
   {
     "id": "P020",
@@ -238,29 +238,29 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Coup de cœur",
+    "gamme": "Milieu de gamme",
     "benefice": "Déjà éclairée : la porte se voit de la rue, de jour comme de nuit."
   },
   {
     "id": "P023",
-    "name": "Rideau lumineux extérieur 10 m, 400 LED blanc chaud, IP44 (Meision)",
+    "name": "Rideau lumineux extérieur 7,5 m, 200 LED, 8 modes et minuterie (LEDYA)",
     "rayon": "Déco extérieure",
-    "url": "https://www.amazon.fr/dp/B0BG71YZGS",
+    "url": "https://www.amazon.fr/dp/B09BB43VCN",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Coup de cœur",
-    "benefice": "400 LED le long de la gouttière : toute la façade s'illumine."
+    "gamme": "Petit prix",
+    "benefice": "Le long de la gouttière, avec minuterie : la façade s'allume seule."
   },
   {
     "id": "P024",
-    "name": "Guirlande guinguette extérieure 20 m, ampoules G40, IP44",
+    "name": "Guirlande guinguette extérieure 10 m, 25+3 ampoules G40",
     "rayon": "Déco extérieure",
-    "url": "https://www.amazon.fr/dp/B0DYYV9SX9",
+    "url": "https://www.amazon.fr/dp/B0983VFYS3",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Milieu de gamme",
+    "gamme": "Petit prix",
     "benefice": "Grosses ampoules G40 pour un balcon façon marché de Noël."
   },
   {
@@ -271,7 +271,7 @@
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Petit prix",
+    "gamme": "Milieu de gamme",
     "benefice": "Dix petites lumières pour les marches, le rebord ou la table."
   },
   {
@@ -297,6 +297,17 @@
     "benefice": "Très bien noté pour sa densité : il accepte toutes les palettes."
   },
   {
+    "id": "P049",
+    "name": "Petit sapin de table pré-éclairé 61 cm en fibre optique",
+    "rayon": "Sapins & pieds",
+    "url": "https://www.amazon.fr/dp/B0CDFKPH41",
+    "gamme": "Milieu de gamme",
+    "benefice": "Déjà éclairé : posé sur un buffet ou une console, il suffit de le brancher.",
+    "price": null,
+    "image": null,
+    "status": "Validé"
+  },
+  {
     "id": "P028",
     "name": "Guirlande fil cuivre 10 m, 100 micro-LED, USB (SALCAR)",
     "rayon": "Guirlandes & lumières",
@@ -320,14 +331,14 @@
   },
   {
     "id": "P030",
-    "name": "Lot de 30 boules en verre champagne et crème mat, 6 cm (Inge Glas)",
+    "name": "Lot de 4 boules en verre de Lauscha, bleu mat avec scène de Noël (Dekohelden24)",
     "rayon": "Boules & suspensions",
-    "url": "https://www.amazon.fr/dp/B07Z83TS6W",
+    "url": "https://www.amazon.fr/dp/B076WYGLKV",
     "price": null,
     "image": null,
     "status": "Validé",
-    "gamme": "Coup de cœur",
-    "benefice": "La palette champagne de l'année, en vrai verre soufflé."
+    "gamme": "Petit prix",
+    "benefice": "Verre soufflé de Lauscha, la tradition allemande des boules de Noël."
   },
   {
     "id": "P031",
@@ -495,6 +506,17 @@
     "benefice": "Grands, dorés et velours : la touche glamour champagne."
   },
   {
+    "id": "P050",
+    "name": "Crèche de Noël avec 11 santons (Nordstern)",
+    "rayon": "Villages & figurines",
+    "url": "https://www.amazon.fr/dp/B0CLWJDHHW",
+    "gamme": "Petit prix",
+    "benefice": "La crèche complète avec ses onze santons, prête à installer.",
+    "price": null,
+    "image": null,
+    "status": "Validé"
+  },
+  {
     "id": "P040",
     "name": "Photophore de Noël décoratif (COM-FOUR)",
     "rayon": "Table de Noël",
@@ -526,5 +548,16 @@
     "status": "Validé",
     "gamme": "Milieu de gamme",
     "benefice": "Toute la façade décorée sans échelle ni guirlande."
+  },
+  {
+    "id": "P051",
+    "name": "Renne lumineux acrylique 24 LED blanc (Konstsmide)",
+    "rayon": "Déco extérieure",
+    "url": "https://www.amazon.fr/dp/B008DM4SH8",
+    "gamme": "Milieu de gamme",
+    "benefice": "Un renne qui brille dans le jardin ou sur le perron dès la tombée de la nuit.",
+    "price": null,
+    "image": null,
+    "status": "Validé"
   }
 ]
