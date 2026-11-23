@@ -7,3 +7,7 @@ next-env.d.ts
 .vercel
 ~$*.xlsx
 .DS_Store
+
+# Épingles en PNG pleine qualité : gardées en local, la version en ligne est dans public/pins (JPG)
+pins/vague1/*.png
+pins/_a_supprimer/
