@@ -51,8 +51,8 @@ for i, (s, kw) in enumerate(f1kw):
     body = (f"{cap(kw)} : la semaine du Black Friday est le bon moment pour s'équiper avant les fêtes. "
             f"Notre rayon {ens} rassemble une sélection notée par les clients, en trois gammes.")
     pins.append(dict(rec="F1", slug=s, kw=kw, titre=f"{cap(kw)} : notre sélection à voir sur Amazon"[:100],
-                     img=["Black Friday : la sélection", "Sélection Black Friday", "Le Black Friday de Noël"][i % 3],
-                     band="Sélection Black Friday", photo=src(photos[i % 4]),
+                     img=["La sélection déco de Noël", "Équipez-vous avant les fêtes", "Nos idées à voir sur Amazon"][i % 3],
+                     band="Black Friday 2026", photo=src(photos[i % 4]),
                      desc=fit(body, [f"Mots-clés : {o}, déco de Noël 2026, cadeaux maison."]), board=board))
 # F2 · Petit budget (21)
 f2kw = []
@@ -103,7 +103,7 @@ for i, (s, kw) in enumerate(f4kw):
     body = (f"{cap(kw)} : il reste quelques jours avant le réveillon. Dans notre rayon {ens}, nos idées faciles à installer, "
             f"triées en trois gammes pour choisir en deux minutes.")
     pins.append(dict(rec="F4", slug=s, kw=kw, titre=f"{cap(kw)} : nos idées à commander"[:100],
-                     img=["Déco de dernière minute", "Noël de dernière minute", "Il est encore temps"][i % 3],
+                     img=["Il est encore temps", "Le réveillon approche", "Des idées faciles à installer"][i % 3],
                      band="Dernière minute", photo=src(photos[(i + 1) % 4]),
                      desc=fit(body, [f"Mots-clés : {o}, cadeau de Noël, déco de Noël 2026."]), board=board))
 

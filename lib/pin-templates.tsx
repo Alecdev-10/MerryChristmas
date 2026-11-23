@@ -141,7 +141,7 @@ function C4({ p }: { p: Pin }) {
 
 function Bandeau({ text }: { text: string }) {
   return (
-    <div style={{ display: "flex", alignSelf: "flex-start", padding: "14px 26px", background: V.lampion, color: V.profond, fontFamily: "Jost", fontSize: 34, transform: "rotate(-2deg)" }}>
+    <div style={{ display: "flex", flexShrink: 0, alignSelf: "flex-start", padding: "14px 26px", background: V.lampion, color: V.profond, fontFamily: "Jost", fontSize: 34, transform: "rotate(-2deg)" }}>
       {text}
     </div>
   );
@@ -172,14 +172,14 @@ function FGrille({ p }: { p: Pin }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", width: 1000, height: 1500, background: V.velours, padding: "80px 60px 50px" }}>
       <Bandeau text="Petit budget" />
-      <div style={{ display: "flex", marginTop: 26 }}>
-        <Titre text={p.img} size={92} />
+      <div style={{ display: "flex", flexShrink: 0, marginTop: 26 }}>
+        <Titre text={p.img} size={88} />
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 22, marginTop: 44 }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 20, marginTop: 36 }}>
         {p.tiles!.map((t, i) => (
           <div key={i} style={{ display: "flex", flexDirection: "column", width: 428, padding: 12, background: V.kraft, color: V.encre }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={u(t.photo, 420, 250)} width={404} height={240} style={{ objectFit: "cover" }} alt="" />
+            <img src={u(t.photo, 420, 200)} width={404} height={196} style={{ objectFit: "cover" }} alt="" />
             <div style={{ display: "flex", fontFamily: "Jost", fontSize: 22, lineHeight: 1.2, marginTop: 10, height: 54, overflow: "hidden" }}>{t.nom}</div>
           </div>
         ))}
